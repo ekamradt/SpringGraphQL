@@ -11,6 +11,16 @@ Sample app
 * GraphQL / GraphiQL
 * LiquiBase (for coordinating SQL files)
 
+
+#### Rest Endpoints (APIs)
+
+| Method | Endpoint | Description |
+| ------ | -------- | ----------- |
+| GET | .../api/v1/names | List all names |
+| POST | .../api/v1/name (w/ json data) | Create a name |
+| PUT | .../api/v1/name (w/ json data) | Update a name |
+| DELETE | .../api/v1/name/\<nameId> | Delete a name |
+
 #### GraphQL Examples
 
 

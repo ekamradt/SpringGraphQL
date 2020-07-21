@@ -34,7 +34,6 @@ public class NameController {
 
     @GetMapping("/names")
     public ResponseEntity<MadResponse<List<Name>>> getNames() {
-        //return runAndReturn(nameRepo::findAll, "Problem with Name List.");
         return runAndReturn(this::getAllNames, "Problem with Name List.");
     }
 
