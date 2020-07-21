@@ -1,0 +1,177 @@
+--
+
+/***************
+
+
+
+*/
+
+DROP TABLE IF EXISTS name CASCADE;
+DROP TABLE IF EXISTS phone CASCADE;
+DROP TABLE IF EXISTS email CASCADE;
+DROP TABLE IF EXISTS grand_parent CASCADE;
+DROP TABLE IF EXISTS parent CASCADE;
+DROP TABLE IF EXISTS parent_grand_parent CASCADE;
+DROP TABLE IF EXISTS child CASCADE;
+DROP TABLE IF EXISTS child_parent CASCADE;
+DROP TABLE IF EXISTS phone_enum;
+
+DROP SEQUENCE IF EXISTS hibernate_sequence;
+CREATE SEQUENCE hibernate_sequence START WITH 1000;
+
+CREATE TYPE phone_enum AS ENUM( 'HOME', 'WORK', 'MOBILE');
+
+CREATE TABLE name (
+    name_id     serial
+,   first_name  varchar(64)
+,   last_name   varchar(64)
+--
+,   CONSTRAINT name_pk PRIMARY KEY(name_id)
+);
+
+CREATE TABLE phone (
+    phone_id        serial
+,   phone_type      varchar(64)
+,   phone_number    varchar(64)
+--
+,   CONSTRAINT phone_pk PRIMARY KEY(phone_id)
+);
+
+CREATE TABLE email (
+    email_id         serial
+,   email_address    varchar(64)
+--
+,   CONSTRAINT email_pk PRIMARY KEY(email_id)
+);
+
+CREATE TABLE grand_parent (
+    grand_parent_id     SERIAL
+,   name_id             INT NOT NULL
+,   phone_id            INT
+,   email_id            INT
+,   birth_date          DATE
+--
+,   CONSTRAINT grand_parent_pk PRIMARY KEY( grand_parent_id )
+,   CONSTRAINT grand_parent_name_fk FOREIGN KEY (name_id) REFERENCES name(name_id)
+,   CONSTRAINT grand_parent_phone_fk FOREIGN KEY (phone_id) REFERENCES phone(phone_id)
+,   CONSTRAINT grand_parent_phone_fk FOREIGN KEY (email_id) REFERENCES email(email_id)
+);
+
+CREATE INDEX grand_parent_name_fk_ix ON grand_parent(name_id);
+CREATE INDEX grand_parent_phone_fk_ix ON grand_parent(phone_id);
+CREATE INDEX grand_parent_email_fk_ix ON grand_parent(email_id);
+
+CREATE TABLE parent (
+    parent_id           SERIAL
+,   name_id             INT NOT NULL
+,   phone_id            INT
+,   email_id            INT
+,   birth_date          DATE
+--
+,   CONSTRAINT parent_pk PRIMARY KEY( parent_id )
+,   CONSTRAINT parent_name_fk FOREIGN KEY (name_id) REFERENCES name(name_id)
+,   CONSTRAINT parent_phone_fk FOREIGN KEY (phone_id) REFERENCES phone(phone_id)
+,   CONSTRAINT parent_phone_fk FOREIGN KEY (email_id) REFERENCES email(email_id)
+);
+
+CREATE INDEX parent_name_fk_ix ON parent(name_id);
+CREATE INDEX parent_phone_fk_ix ON parent(phone_id);
+CREATE INDEX parent_email_fk_ix ON parent(email_id);
+
+CREATE TABLE child (
+    child_id     SERIAL
+,   name_id      INT NOT NULL
+,   phone_id     INT
+,   email_id     INT
+,   birth_date   DATE
+--
+,   CONSTRAINT child_pk PRIMARY KEY( child_id )
+,   CONSTRAINT child_name_fk FOREIGN KEY (name_id) REFERENCES name(name_id)
+,   CONSTRAINT child_phone_fk FOREIGN KEY (phone_id) REFERENCES phone(phone_id)
+,   CONSTRAINT child_phone_fk FOREIGN KEY (email_id) REFERENCES email(email_id)
+);
+
+CREATE INDEX child_name_fk_ix ON child(name_id);
+CREATE INDEX child_phone_fk_ix ON child(phone_id);
+CREATE INDEX child_email_fk_ix ON child(email_id);
+
+CREATE TABLE parent_grand_parent (
+    parent_grand_parent_id  serial
+,   parent_id               INT
+,   grand_parent_id         INT
+--
+,   CONSTRAINT parent_grand_parent_pk PRIMARY KEY( parent_grand_parent_id )
+,   CONSTRAINT parent_grand_parent_parent_fk FOREIGN KEY (parent_id) REFERENCES parent(parent_id)
+,   CONSTRAINT parent_grand_parent_grand_parent_fk FOREIGN KEY (grand_parent_id) REFERENCES grand_parent(grand_parent_id)
+);
+
+CREATE INDEX parent_grand_parent_parent_id_ix ON parent_grand_parent (parent_id);
+CREATE INDEX parent_grand_parent_grand_parent_id_ix ON parent_grand_parent (grand_parent_id);
+
+CREATE TABLE child_parent (
+    child_parent_id     serial
+,   parent_id           INT
+,   child_id            INT
+--
+,   CONSTRAINT child_parent_pk PRIMARY KEY( child_parent_id )
+,   CONSTRAINT child_parent_parent_fk FOREIGN KEY (parent_id) REFERENCES parent(parent_id)
+,   CONSTRAINT child_parent_child_fk FOREIGN KEY (child_id) REFERENCES child(child_id)
+);
+
+CREATE INDEX child_parent_parent_id_ix ON child_parent (parent_id);
+CREATE INDEX child_parent_grand_parent_id_ix ON child_parent(parent_id);
+
+INSERT INTO name ( name_id, first_name, last_name ) VALUES
+ (1, 'Granpa', 'Tables')
+,(2, 'Granma', 'Tables')
+,(3, 'Papa', 'Tables')
+,(4, 'Mama', 'Tables')
+,(5, 'Bobbie', 'Tables')
+,(6, 'Betty', 'Tables')
+;
+
+INSERT INTO phone ( phone_id, phone_type, phone_number ) VALUES
+ (1, 'HOME', '707-907-0007')
+,(2, 'HOME', '707-907-0007')
+,(3, 'MOBILE', '706-906-0006')
+,(4, 'MOBILE', '706-906-0007')
+,(5, 'MOBILE', '708-909-0099')
+,(6, 'MOBILE', '708-909-0100')
+;
+
+INSERT INTO email ( email_id, email_address ) VALUES
+ (1, 'grandpa.tables@delete.all')
+,(2, 'grandma.tables@delete.all')
+,(3, 'papa.tables@delete.all')
+,(4, 'mama.tables@delete.all')
+,(5, 'bobbie.tables@delete.all')
+,(6, 'betty.tables@delete.all')
+;
+
+INSERT INTO grand_parent (grand_parent_id, name_id, phone_id, email_id, birth_date ) VALUES
+ (1, 1, 1, 1, '19610113' )
+,(2, 2, 2, 2, '19600519' )
+;
+
+INSERT INTO parent (parent_id, name_id, phone_id, email_id, birth_date ) VALUES
+ (3, 3, 3, 3, '19970113' )
+,(4, 4, 4, 4, '19960519' )
+
+INSERT INTO parent_grand_parent (grand_parent_id, parent_id ) VALUES
+  ( 1, 3)
+, ( 1, 4)
+, ( 2, 3)
+, ( 2, 4)
+;
+
+INSERT INTO child (child, name_id, phone_id, email_id, birth_date ) VALUES
+ (5, 5, 5, 5, '20160519' )
+,(6, 6, 6, 6, '20170113' )
+;
+
+INSERT INTO child_parent (parent_id, child_id ) VALUES
+ ( 3, 5 )
+,( 4, 5 )
+,( 3, 6 )
+,( 4, 6 )
+;
