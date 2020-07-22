@@ -27,7 +27,7 @@
 		<myspring.framework.version>2.3.1.RELEASE</myspring.framework.version>
 		<validation.version>2.0.1.Final</validation.version>
 
-		<start-class>com.example.springmadness.MadnessApplication</start-class>
+		<start-class>com.example.springmadness.Application</start-class>
 	</properties>
 
 	<dependencies>
