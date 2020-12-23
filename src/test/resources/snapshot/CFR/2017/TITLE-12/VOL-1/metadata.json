@@ -1,0 +1,15 @@
+{
+    "branch": "EN-1401/fix-misspellings-in-metadta-json",
+    "commit_sha": "aef19f749f6ad8724a35f05406112fdc40a8ff76",
+    "dirty": true,
+    "document_edges_count": 55474,
+    "document_element_links_count": 73,
+    "document_elements_count": 55475,
+    "document_levels_count": 16,
+    "document_orderings_count": 1,
+    "prefix": "CFR_TITLE-12_VOL-1",
+    "published_date": "2017-01-01T00:00:00",
+    "source_attributes_count": 13,
+    "source_document_name": "CFR",
+    "source_version_name": "2017"
+}

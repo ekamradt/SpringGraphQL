@@ -1,0 +1,19 @@
+#  spring.jpa.hibernate.ddl-auto=validate
+spring:
+  datasource:
+    url=jdbc:h2:mem:testdb
+    driverClassName=org.h2.Driver
+    username=sa
+    password=password
+  jpa:
+    database-platform=org.hibernate.dialect.H2Dialect
+
+avro:
+  schemaDirectory: resources/avroSchemas
+
+testconfig:
+  child001:
+    value001: "Hello Value 001"
+  child002:
+    value002: "Hello Value 002"
+

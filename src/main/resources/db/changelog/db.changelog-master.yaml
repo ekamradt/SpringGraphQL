@@ -1,3 +1,0 @@
-databaseChangeLog:
-  - include:
-      file: db/migration/Mad_Sql_01.sql
