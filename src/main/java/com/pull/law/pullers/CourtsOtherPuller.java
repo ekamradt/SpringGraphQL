@@ -5,6 +5,8 @@ import com.pull.law.misc.ScanResult;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CourtsOtherPuller extends PullerBase {
 
@@ -16,10 +18,10 @@ public class CourtsOtherPuller extends PullerBase {
     //      Simply add "Bankr." preceding the district court abbreviations.
 
     @Override
-    public ScanResult call() {
+    public List<LineInfo> call() {
         init();
-        super.readThis(url);
-        return ScanResult.builder().msg("Ok").build();
+        return super.readThis(url);
+        //return ScanResult.builder().msg("Ok").build();
     }
 
     private void init() {

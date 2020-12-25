@@ -1,7 +1,10 @@
 package com.pull.law.pullers;
 
+import com.pull.law.misc.LineInfo;
 import com.pull.law.misc.ScanResult;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class LegalPeriodicalPuller extends PullerBase {
@@ -12,10 +15,10 @@ public class LegalPeriodicalPuller extends PullerBase {
     private static final String IGNORE_HEADING = "Periodical Name";
 
     @Override
-    public ScanResult call() {
+    public List<LineInfo> call() {
         init();
-        super.readThis(url);
-        return ScanResult.builder().msg("Ok").build();
+        return super.readThis(url);
+        //return ScanResult.builder().msg("Ok").build();
     }
 
     private void init() {

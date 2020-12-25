@@ -4,6 +4,8 @@ import com.pull.law.misc.LineInfo;
 import com.pull.law.misc.ScanResult;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CourtsPullerBase extends PullerBase {
 
@@ -11,10 +13,10 @@ public class CourtsPullerBase extends PullerBase {
     private static final String url = "https://law.uakron.libguides.com/bluebook/federalabbreviations";
 
     @Override
-    public ScanResult call() {
+    public List<LineInfo> call() {
         init();
-        super.readThis(url);
-        return ScanResult.builder().msg("Ok").build();
+        return super.readThis(url);
+        //return ScanResult.builder().msg("Ok").build();
     }
 
     private void init() {

@@ -1,19 +1,24 @@
 package com.pull.law.pullers;
 
 import com.pull.law.misc.LineInfo;
-import com.pull.law.misc.ScanResult;
 import org.apache.logging.log4j.util.Strings;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public abstract class PullerBase {
+
+    public static final String FILENAME = "/home/ekamradt/git/SpringGraphQL/output.txt";
 
     public static String TR_START = "<tr>";
     public static String TR_END = "</tr>";
@@ -33,8 +38,9 @@ public abstract class PullerBase {
     protected int titleIndex = 0;
     protected String title;
     protected String currentSubtitle;
+    private List<LineInfo> lineInfos = new ArrayList<>();
 
-    abstract public ScanResult call();
+    abstract List<LineInfo> call();
 
     public void addIgnoreNameValue(final String nameValue) {
         ignoreNameValues.add(nameValue);
@@ -52,23 +58,34 @@ public abstract class PullerBase {
         currentSubtitle = subtitleList.get(titleIndex);
     }
 
-    public void readThis(final String urlString) {
-        out("*** readThis 000");
+    public List<LineInfo> readThis(final String urlString) {
+        final StringBuilder sb = new StringBuilder();
         readInit();
         try {
             final URL oracle = new URL(urlString);
             final BufferedReader in = new BufferedReader(new InputStreamReader(oracle.openStream()));
             String inputLine;
-            out("*** readThis 001");
             while ((inputLine = in.readLine()) != null) {
-                out("*** readThis 002");
                 if (!this.processLine(inputLine)) {
-                    out("*** readThis FALSE 099");
                     break;
                 }
             }
-            out("*** readThis 099");
             in.close();
+            writeLineInfos();
+            return lineInfos;
+        } catch (Exception e) {
+            throw new IllegalArgumentException(e);
+        }
+    }
+
+    private void writeLineInfos() {
+        try {
+            final String content = lineInfos.stream()
+                    .map(LineInfo::toCsv)
+                    .collect(Collectors.joining(""));
+            final Path path = Path.of(FILENAME);
+            Files.writeString(path, content,
+                    StandardOpenOption.CREATE, StandardOpenOption.APPEND, StandardOpenOption.WRITE);
         } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }
@@ -90,7 +107,6 @@ public abstract class PullerBase {
     protected String cleanString(String tempLine) {
         try {
             tempLine = tempLine.replace("&nbsp;", " ");
-
             if (tempLine.contains("<")) {
                 tempLine = stripTagsByPosition(tempLine);
             }
@@ -133,6 +149,7 @@ public abstract class PullerBase {
         if (Strings.isEmpty(inLineInfo.getName()) || Strings.isEmpty(inLineInfo.getValue())) {
             return;
         }
+        lineInfos.add(lineInfo);
         final LineInfo lineInfo = parseNoteFromValue(inLineInfo);
         System.out.println(String.format("'%s' : '%s' : '%s' : '%s' : '%s'",
                 lineInfo.getTitle(), lineInfo.getSubtitle(), lineInfo.getName(), lineInfo.getValue(),
@@ -157,17 +174,14 @@ public abstract class PullerBase {
 
     protected boolean processLine(final String line) {
 
-        out ("*** 000");
         if (!turnOnImport) {
             handleBodyStart(line);
             return true;
         }
 
-        out ("*** 001");
         if (line.contains(BODY_END)) {
             titleIndex++;
             if (titleIndex >= subtitleList.size()) {
-                out ("*** Body End 099");
                 return false;
             }
             currentSubtitle = subtitleList.get(titleIndex);
@@ -175,7 +189,6 @@ public abstract class PullerBase {
             return true;
         }
 
-        out ("*** 002");
         if (!trTag) {
             if (line.startsWith(TR_START)) {
                 trTag = true;
@@ -183,15 +196,12 @@ public abstract class PullerBase {
             }
         }
 
-        out ("*** 003");
         if (line.startsWith(TR_END)) {
             trTag = false;
             return true;
         }
 
-        out ("*** 004");
         extractDataFromLine(line);
-        out ("*** 099");
         return true;
     }
 

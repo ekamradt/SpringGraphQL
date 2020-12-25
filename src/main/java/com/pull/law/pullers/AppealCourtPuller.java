@@ -1,7 +1,10 @@
 package com.pull.law.pullers;
 
+import com.pull.law.misc.LineInfo;
 import com.pull.law.misc.ScanResult;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class AppealCourtPuller extends PullerBase {
@@ -11,10 +14,10 @@ public class AppealCourtPuller extends PullerBase {
     private static final String url = "https://law.uakron.libguides.com/c.php?g=627783&p=4379901";
 
     @Override
-    public ScanResult call() {
+    public List<LineInfo> call() {
         init();
-        super.readThis(url);
-        return ScanResult.builder().msg("Ok").build();
+        return super.readThis(url);
+        //return ScanResult.builder().msg("Ok").build();
     }
 
     private void init() {
