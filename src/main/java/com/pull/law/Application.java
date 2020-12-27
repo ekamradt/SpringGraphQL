@@ -2,6 +2,7 @@ package com.pull.law;
 
 import com.pull.law.misc.BluePart;
 import com.pull.law.misc.BlueParts;
+import com.pull.law.misc.IndexPair;
 import com.pull.law.misc.LineInfo;
 import com.pull.law.service.BluebookParseService;
 import com.pull.law.service.PullService;
@@ -14,7 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -49,7 +49,7 @@ public class Application {
             final String normalizedBluebook = blueParts.getNormalizedBluebook();
             final IndexPair indexPair = getFirstAlphaPart(blueParts.getPattern());
             final List<String> blueBits = Arrays.asList(normalizedBluebook.split(BluePart.SPACE));
-            final List<String> alphaBits = blueBits.subList(indexPair.getIStart(), indexPair.iEnd);
+            final List<String> alphaBits = blueBits.subList(indexPair.getIStart(), indexPair.getIEnd());
             final String alphaNormalized = String.join(BluePart.SPACE, alphaBits);
 
             for (final LineInfo info : infos) {
@@ -92,12 +92,5 @@ public class Application {
             iEnd = pattern.length();
         }
         return IndexPair.builder().iStart(iStart).iEnd(iEnd).build();
-    }
-
-    @Getter
-    @Builder
-    public static class IndexPair {
-        private int iStart = -1;
-        private int iEnd = -1;
     }
 }

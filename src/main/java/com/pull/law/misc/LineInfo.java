@@ -53,8 +53,7 @@ public class LineInfo {
                     wrap(name) + "," +
                     wrap(value) + "," +
                     wrap(normalizedBluebook) + "," +
-                    wrap(note) +
-                    "\n";
+                    wrap(note);
         } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }

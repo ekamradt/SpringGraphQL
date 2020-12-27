@@ -1,6 +1,6 @@
 package com.pull.law.misc;
 
-import com.pull.law.pullers.PullerBase;
+import com.pull.law.pullers.uakronlibguides.PullerBase;
 import lombok.Builder;
 import lombok.Getter;
 

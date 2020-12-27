@@ -1,7 +1,6 @@
-package com.pull.law.pullers;
+package com.pull.law.pullers.uakronlibguides;
 
 import com.pull.law.misc.LineInfo;
-import com.pull.law.misc.ScanResult;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

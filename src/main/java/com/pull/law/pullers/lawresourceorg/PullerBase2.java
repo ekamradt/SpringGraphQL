@@ -1,4 +1,4 @@
-package com.pull.law.pullers;
+package com.pull.law.pullers.lawresourceorg;
 
 import com.pull.law.misc.LineInfo;
 import org.apache.logging.log4j.util.Strings;
@@ -16,7 +16,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public abstract class PullerBase {
+
+public abstract class PullerBase2 {
 
     public static final String FILENAME = "/home/ekamradt/git/SpringGraphQL/output.txt";
 
@@ -40,7 +41,7 @@ public abstract class PullerBase {
     protected String currentSubtitle;
     private List<LineInfo> lineInfos = new ArrayList<>();
 
-    abstract List<LineInfo> call();
+    public abstract List<LineInfo> call();
 
     public void addIgnoreNameValue(final String nameValue) {
         ignoreNameValues.add(nameValue);
@@ -54,13 +55,13 @@ public abstract class PullerBase {
         return ignoreNameValues.contains(phrase);
     }
 
-    protected void readInit() {
+    protected void readWriteInit() {
         currentSubtitle = subtitleList.get(titleIndex);
     }
 
     public List<LineInfo> readThis(final String urlString) {
         final StringBuilder sb = new StringBuilder();
-        readInit();
+        readWriteInit();
         try {
             final URL oracle = new URL(urlString);
             final BufferedReader in = new BufferedReader(new InputStreamReader(oracle.openStream()));
@@ -82,7 +83,7 @@ public abstract class PullerBase {
         try {
             final String content = lineInfos.stream()
                     .map(LineInfo::toCsv)
-                    .collect(Collectors.joining(""));
+                    .collect(Collectors.joining("\n"));
             final Path path = Path.of(FILENAME);
             Files.writeString(path, content,
                     StandardOpenOption.CREATE, StandardOpenOption.APPEND, StandardOpenOption.WRITE);
