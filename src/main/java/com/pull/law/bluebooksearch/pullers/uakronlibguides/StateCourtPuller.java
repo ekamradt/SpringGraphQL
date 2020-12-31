@@ -1,6 +1,6 @@
-package com.pull.law.pullers.uakronlibguides;
+package com.pull.law.bluebooksearch.pullers.uakronlibguides;
 
-import com.pull.law.misc.LineInfo;
+import com.pull.law.bluebooksearch.misc.BlueSearchRecord;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public class StateCourtPuller extends PullerBase {
     private static final String url = "https://law.uakron.libguides.com/c.php?g=627783&p=4379899";
 
     @Override
-    public List<LineInfo> call() {
+    public List<BlueSearchRecord> call() {
         init();
         return super.readThis(url);
         //return ScanResult.builder().msg("Ok").build();

@@ -1,6 +1,6 @@
-package com.pull.law.pullers.uakronlibguides;
+package com.pull.law.bluebooksearch.pullers.uakronlibguides;
 
-import com.pull.law.misc.LineInfo;
+import com.pull.law.bluebooksearch.misc.BlueSearchRecord;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +16,7 @@ public class CourtsOtherPuller extends PullerBase {
     //      Simply add "Bankr." preceding the district court abbreviations.
 
     @Override
-    public List<LineInfo> call() {
+    public List<BlueSearchRecord> call() {
         init();
         return super.readThis(url);
         //return ScanResult.builder().msg("Ok").build();

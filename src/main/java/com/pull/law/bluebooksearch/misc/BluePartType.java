@@ -1,11 +1,16 @@
-package com.pull.law.misc;
+package com.pull.law.bluebooksearch.misc;
 
 import lombok.Getter;
 import org.apache.logging.log4j.util.Strings;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public enum BluePartType {
     ALPHA("A"), NUMERIC("N"), SYMBOL("S"), MISC("M"), EMPTY("");
 
+    public static final Set<Character> THESE_ARE_ALPHA_ALSO = new HashSet<Character>(List.of('&'));
     @Getter
     private final String code;
 
@@ -18,7 +23,7 @@ public enum BluePartType {
             return EMPTY;
         }
         final int code = partString.codePointAt(0);
-        if (Character.isAlphabetic(code)) {
+        if (Character.isAlphabetic(code) || THESE_ARE_ALPHA_ALSO.contains((char) code)) {
             return ALPHA;
         }
         if (Character.isDigit(code)) {

@@ -1,4 +1,4 @@
-package com.pull.law.misc;
+package com.pull.law.bluebooksearch.misc;
 
 import lombok.Getter;
 import lombok.ToString;
@@ -52,7 +52,7 @@ public class BluePart {
         temp = StringEscapeUtils.unescapeHtml4(temp);
         temp = temp.toUpperCase();
         // Remove all non A-Z chars
-        temp = temp.replaceAll("[^A-Z]", "");
+        temp = temp.replaceAll("[^A-Z|^&]", "");
         return temp;
     }
 

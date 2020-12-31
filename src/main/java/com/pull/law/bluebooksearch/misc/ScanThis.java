@@ -1,6 +1,6 @@
-package com.pull.law.misc;
+package com.pull.law.bluebooksearch.misc;
 
-import com.pull.law.pullers.uakronlibguides.PullerBase;
+import com.pull.law.bluebooksearch.pullers.uakronlibguides.PullerBase;
 import lombok.Builder;
 import lombok.Getter;
 

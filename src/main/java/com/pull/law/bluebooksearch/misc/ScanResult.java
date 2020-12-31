@@ -1,4 +1,4 @@
-package com.pull.law.misc;
+package com.pull.law.bluebooksearch.misc;
 
 import lombok.Builder;
 import lombok.Getter;

@@ -1,14 +1,21 @@
-package com.pull.law.misc;
+package com.pull.law.bluebooksearch.misc;
 
 import lombok.Getter;
 import org.apache.logging.log4j.util.Strings;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 @Getter
 public class BlueParts {
+
+    public static final Set<String> IGNORE_LINES = new HashSet<>() {{
+        add("Applies to all products");
+    }};
+
 
     private String originalBluebook;
     private String normalizedBluebook;
@@ -16,7 +23,7 @@ public class BlueParts {
     private List<BluePart> bluePartList;
 
     public static BlueParts of(final String line) {
-        if (Strings.isEmpty(line)) {
+        if (Strings.isEmpty(line) || IGNORE_LINES.contains(line)) {
             return null;
         }
         final BlueParts blueParts = new BlueParts();

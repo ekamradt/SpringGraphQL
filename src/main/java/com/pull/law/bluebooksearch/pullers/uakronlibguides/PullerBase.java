@@ -1,6 +1,6 @@
-package com.pull.law.pullers.lawresourceorg;
+package com.pull.law.bluebooksearch.pullers.uakronlibguides;
 
-import com.pull.law.misc.LineInfo;
+import com.pull.law.bluebooksearch.misc.BlueSearchRecord;
 import org.apache.logging.log4j.util.Strings;
 
 import java.io.BufferedReader;
@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 
-public abstract class PullerBase2 {
+public abstract class PullerBase {
 
     public static final String FILENAME = "/home/ekamradt/git/SpringGraphQL/output.txt";
 
@@ -35,13 +35,13 @@ public abstract class PullerBase2 {
     protected boolean turnOnImport = false;
     protected int tdTagIndex = 0;
     protected boolean trTag = false;
-    protected LineInfo lineInfo;
+    protected BlueSearchRecord blueSearchRecord;
     protected int titleIndex = 0;
     protected String title;
     protected String currentSubtitle;
-    private List<LineInfo> lineInfos = new ArrayList<>();
+    private List<BlueSearchRecord> blueSearchRecords = new ArrayList<>();
 
-    public abstract List<LineInfo> call();
+    public abstract List<BlueSearchRecord> call();
 
     public void addIgnoreNameValue(final String nameValue) {
         ignoreNameValues.add(nameValue);
@@ -59,7 +59,7 @@ public abstract class PullerBase2 {
         currentSubtitle = subtitleList.get(titleIndex);
     }
 
-    public List<LineInfo> readThis(final String urlString) {
+    public List<BlueSearchRecord> readThis(final String urlString) {
         final StringBuilder sb = new StringBuilder();
         readWriteInit();
         try {
@@ -73,7 +73,7 @@ public abstract class PullerBase2 {
             }
             in.close();
             writeLineInfos();
-            return lineInfos;
+            return blueSearchRecords;
         } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }
@@ -81,8 +81,8 @@ public abstract class PullerBase2 {
 
     private void writeLineInfos() {
         try {
-            final String content = lineInfos.stream()
-                    .map(LineInfo::toCsv)
+            final String content = blueSearchRecords.stream()
+                    .map(BlueSearchRecord::toCsv)
                     .collect(Collectors.joining("\n"));
             final Path path = Path.of(FILENAME);
             Files.writeString(path, content,
@@ -146,31 +146,31 @@ public abstract class PullerBase2 {
         return tempLine.trim();
     }
 
-    protected void outputLineInfo(final LineInfo inLineInfo) {
-        if (Strings.isEmpty(inLineInfo.getName()) || Strings.isEmpty(inLineInfo.getValue())) {
+    protected void outputLineInfo(final BlueSearchRecord inBlueSearchRecord) {
+        if (Strings.isEmpty(inBlueSearchRecord.getName()) || Strings.isEmpty(inBlueSearchRecord.getValue())) {
             return;
         }
-        lineInfos.add(lineInfo);
-        final LineInfo lineInfo = parseNoteFromValue(inLineInfo);
+        blueSearchRecords.add(this.blueSearchRecord);
+        final BlueSearchRecord blueSearchRecord = parseNoteFromValue(inBlueSearchRecord);
         System.out.println(String.format("'%s' : '%s' : '%s' : '%s' : '%s'",
-                lineInfo.getTitle(), lineInfo.getSubtitle(), lineInfo.getName(), lineInfo.getValue(),
-                lineInfo.getNote()));
+                blueSearchRecord.getTitle(), blueSearchRecord.getSubtitle(), blueSearchRecord.getName(), blueSearchRecord.getValue(),
+                blueSearchRecord.getNote()));
     }
 
-    protected LineInfo parseNoteFromValue(final LineInfo inLineInfo) {
-        final LineInfo lineInfo = LineInfo.copy(inLineInfo);
-        final String value = inLineInfo.getValue();
+    protected BlueSearchRecord parseNoteFromValue(final BlueSearchRecord inBlueSearchRecord) {
+        final BlueSearchRecord blueSearchRecord = BlueSearchRecord.copy(inBlueSearchRecord);
+        final String value = inBlueSearchRecord.getValue();
         final int iStart = value.indexOf("(");
         if (iStart >= 0) {
             final int iEnd = value.indexOf(")", iStart);
             if (iEnd >= 0) {
                 final String tempValue = value.substring(0, iStart);
                 final String tempNote = value.substring(iStart, iEnd);
-                lineInfo.setValue(tempValue)
+                blueSearchRecord.setValue(tempValue)
                         .setNote(tempNote);
             }
         }
-        return lineInfo;
+        return blueSearchRecord;
     }
 
     protected boolean processLine(final String line) {
@@ -218,14 +218,14 @@ public abstract class PullerBase2 {
                 if (!line.contains(TD_START1) && !line.contains(TD_START2)) {
                     return;
                 }
-                lineInfo = new LineInfo();
-                lineInfo.setTitle(title);
-                lineInfo.setSubtitle(currentSubtitle);
+                blueSearchRecord = new BlueSearchRecord();
+                blueSearchRecord.setTitle(title);
+                blueSearchRecord.setSubtitle(currentSubtitle);
                 tdTagIndex++;
             case 1:
                 final String name = parseTd(line);
                 if (!ignoreNameOrValue(name)) {
-                    lineInfo.appendName(name);
+                    blueSearchRecord.appendName(name);
                 }
                 if (line.contains(TD_END)) {
                     tdTagIndex++;
@@ -234,11 +234,11 @@ public abstract class PullerBase2 {
             case 2:
                 final String value = parseTd(line);
                 if (!ignoreNameOrValue(value)) {
-                    lineInfo.appendValue(value);
+                    blueSearchRecord.appendValue(value);
                 }
                 if (line.contains(TD_END)) {
-                    outputLineInfo(lineInfo);
-                    lineInfo = null;
+                    outputLineInfo(blueSearchRecord);
+                    blueSearchRecord = null;
                     tdTagIndex = 0;
                 }
                 break;

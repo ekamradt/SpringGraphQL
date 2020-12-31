@@ -1,6 +1,6 @@
-package com.pull.law.service;
+package com.pull.law.bluebooksearch.service;
 
-import com.pull.law.misc.BlueParts;
+import com.pull.law.bluebooksearch.misc.BlueParts;
 import lombok.RequiredArgsConstructor;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,9 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -19,13 +21,20 @@ public class BluebookParseService {
 
     public static final String ex1 = "17 Cal. $ 1213.43(a)(e)";
 
-    String FILENAME = "/home/ekamradt/git/SpringGraphQL/tt.txt";
+    String FILENAME = "/home/ekamradt/git/SpringGraphQL/WellsFarge_Abbr.txt";
 
 
     //@PostConstruct
     public List<BlueParts> init() {
         return readAll(FILENAME);
-        //parseThis(ex1);
+    }
+
+    private Collection<? extends BlueParts> buildKnowAbbreviations() {
+        final List<BlueParts> bluePartList = new ArrayList<>();
+
+        //new BlueParts()
+
+        return bluePartList;
     }
 
     private List<BlueParts> readAll(final String filename) {
