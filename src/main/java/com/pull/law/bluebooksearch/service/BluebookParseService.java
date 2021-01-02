@@ -1,6 +1,7 @@
 package com.pull.law.bluebooksearch.service;
 
 import com.pull.law.bluebooksearch.misc.BlueParts;
+import com.pull.law.bluebooksearch.spreadsheet.FedInvComForm;
 import lombok.RequiredArgsConstructor;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
@@ -21,20 +22,37 @@ public class BluebookParseService {
 
     public static final String ex1 = "17 Cal. $ 1213.43(a)(e)";
 
-    String FILENAME = "/home/ekamradt/git/SpringGraphQL/WellsFarge_Abbr.txt";
-
+    // String FILENAME = "/home/ekamradt/git/SpringGraphQL/WellsFarge_Abbr_001.txt";
+    // String FILENAME = "/home/ekamradt/git/SpringGraphQL/WellsFarge_Abbr_002.txt";
+    String FILENAME = "/home/ekamradt/git/SpringGraphQL/src/main/resources/FedInvComForm922020.csv";
 
     //@PostConstruct
-    public List<BlueParts> init() {
-        return readAll(FILENAME);
+    public List<FedInvComForm> initForm01() {
+        //return readAll(FILENAME);
+        return readAllIntoStruct01(FILENAME);
     }
 
     private Collection<? extends BlueParts> buildKnowAbbreviations() {
         final List<BlueParts> bluePartList = new ArrayList<>();
-
-        //new BlueParts()
-
         return bluePartList;
+    }
+
+    private List<FedInvComForm> readAllIntoStruct01(final String filename) {
+
+        try {
+            final String content = Files.readString(Path.of(filename));
+            final String[] parts = content.split("\\n");
+
+            final List<FedInvComForm> formList = Arrays.stream(parts)
+                    .map(FedInvComForm::fromPipedLine)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.toList());
+
+            //// bluePartsList.forEach(b -> System.out.println(b.dump()));
+            return formList;
+        } catch (IOException e) {
+            throw new IllegalArgumentException(e);
+        }
     }
 
     private List<BlueParts> readAll(final String filename) {
@@ -47,7 +65,7 @@ public class BluebookParseService {
                     .filter(Objects::nonNull)
                     .collect(Collectors.toList());
 
-            bluePartsList.forEach(b -> System.out.println(b.dump()));
+            //// bluePartsList.forEach(b -> System.out.println(b.dump()));
             return bluePartsList;
         } catch (IOException e) {
             throw new IllegalArgumentException(e);

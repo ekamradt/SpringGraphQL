@@ -7,12 +7,14 @@ import com.pull.law.bluebooksearch.pullers.lawresourceorg.FoundPart;
 import com.pull.law.bluebooksearch.pullers.lawresourceorg.FoundParts;
 import com.pull.law.bluebooksearch.search.MatchPacket;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class BluebookSearchService {
@@ -22,14 +24,18 @@ public class BluebookSearchService {
     private final FoundPartService foundPartService;
     private String alphaNormalized;
 
-    // Cal. Const. art. 13A, 1
-    // CAL CONST ART 13A, 1
     public void findBlueParts(final List<BlueParts> bluePartList, List<BlueSearchRecord> infos) {
 
         final List<FoundParts> foundPartList = new ArrayList<>();
+
+        // Test just one
+        // final BlueParts tempParts = BlueParts.of("MSRB Rule G-3 (a-c,f-h) (Includes Supplementary Material .01,.03,.05)");
+        // bluePartList.clear();
+        // bluePartList.add(tempParts);
+
         bluePartList.forEach(blueParts -> {
-            //final BlueParts blueParts = bluePartList.get(0);
             final FoundParts foundParts = new FoundParts();
+            blueParts.setFoundParts(foundParts);
             foundParts.setBlueParts(blueParts);
 
             searchOneBluebook(infos, blueParts, foundParts);
@@ -41,7 +47,7 @@ public class BluebookSearchService {
         final List<FoundParts> failedList = foundPartList.stream().filter(p -> !p.isMatchFound()).collect(Collectors.toList());
 
         System.out.println(String.format("*** End total: %s  failed: %s", total, failedCount));
-        foundPartService.dumpFoundParts(foundPartList);
+        ///////// foundPartService.dumpFoundParts(foundPartList);
     }
 
     // 1) Start checking from matches using All of the first Alpha portion of
@@ -60,24 +66,41 @@ public class BluebookSearchService {
     private void searchOneBluebook(
             final List<BlueSearchRecord> recordsToSearch, final BlueParts blueParts, final FoundParts foundParts) {
 
-        final MatchPacket matchPacket = new MatchPacket(blueParts);
-        while (matchPacket.getAlphaCountdownSize() > 0) {
-            final String alphaNormalized = matchPacket.getNormalizedAlphaBitsToMatch();
-            final List<BlueSearchRecord> matchingRecords = findMatchingRecords(recordsToSearch, alphaNormalized);
+        try {
+            final MatchPacket matchPacket = new MatchPacket(blueParts);
+            while (matchPacket.getAlphaCountdownSize() > 0) {
+                final String alphaNormalized = matchPacket.getNormalizedAlphaBitsToMatch();
+                final List<BlueSearchRecord> matchingRecords = findMatchingRecords(recordsToSearch, alphaNormalized);
 
-            if (matchingRecords.size() > 0) {
-                foundParts.setMatchFound(true);
-                savedMatchedInfoAdjustforNextSearch(foundParts, matchPacket, matchingRecords, alphaNormalized);
-            } else {
-                if (foundParts.isMatchFound() && matchPacket.getAlphaCountdownSize() == 1) {
-                    // Found first one or more, but others could not be found.
-                    //  So the whole bluebook was not found.
-                    markPartAsNotFound(foundParts, alphaNormalized);
-                    foundParts.setMatchFound(false);
-                    break;
+                final int matchSize = matchingRecords.size();
+                if (matchSize > 0) {
+                    foundParts.setMatchFound(true);
+                    savedMatchedInfoAdjustforNextSearch(foundParts, matchPacket, matchingRecords, alphaNormalized);
+                } else {
+                    if (foundParts.isMatchFound() && matchPacket.getAlphaCountdownSize() == 1) {
+                        // Found first one or more, but others could not be found.
+                        //  So the whole bluebook was not found.
+                        markPartAsNotFound(foundParts, alphaNormalized);
+                        foundParts.setMatchFound(false);
+                        break;
+                    }
+                    matchPacket.decrementAlphaCountdownSize();
                 }
             }
-            matchPacket.decrementAlphaCountdownSize();
+        } catch (Exception e) {
+            log.error("{}  blue: '{}'  Norm: '{}'",
+                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
+            // throw new IllegalArgumentException(e);
+            // foundParts.setMatchFound(false);
+            // foundParts.setThrowable(e);
+        }
+        if (foundParts.isMatchFound()) {
+            log.trace("{}  blue: '{}'  Norm: '{}'",
+                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
+        } else {
+            // No match
+            log.info("{}  blue: '{}'  Norm: '{}'",
+                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
         }
     }
 
@@ -145,7 +168,9 @@ public class BluebookSearchService {
 
         final List<BlueSearchRecord> foundRecords = new ArrayList<>();
         tempBlueSearchRecords.forEach(searchRecord -> {
-            if (searchRecord.getNormalizedValue().equals(alphaNormalized)) {
+            final BlueParts blueParts = searchRecord.getBlueParts();
+            final String normalizedBluebook = blueParts.getNormalizedBluebook();
+            if (normalizedBluebook.equals(alphaNormalized)) {
                 foundRecords.add(searchRecord);
             }
         });

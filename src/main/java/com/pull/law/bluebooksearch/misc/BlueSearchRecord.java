@@ -13,10 +13,10 @@ public class BlueSearchRecord {
     private String subtitle = "";
     private String subsubtitle = "";
     private String name = "";
-    private String value = "";
+    private BlueParts blueParts;
     private String dates = "";
-    private String normalizedValue = "";
     private String note = "";
+    private String urlAddress = "";
 
     public static BlueSearchRecord copy(final BlueSearchRecord inBlueSearchRecord) {
         return new BlueSearchRecord()
@@ -25,8 +25,7 @@ public class BlueSearchRecord {
                 .setSubsubtitle(inBlueSearchRecord.getSubsubtitle())
                 .setName(inBlueSearchRecord.getName())
                 .setDates(inBlueSearchRecord.getDates())
-                .setValue(inBlueSearchRecord.getValue())
-                .setNormalizedValue(inBlueSearchRecord.getNormalizedValue())
+                .setBlueParts((inBlueSearchRecord.getBlueParts()))
                 .setNote(inBlueSearchRecord.getNote());
     }
 
@@ -37,22 +36,14 @@ public class BlueSearchRecord {
                 .setSubsubtitle(inBlueSearchRecord.getSubsubtitle());
     }
 
-    public void appendName(final String val) {
-        if (name != null) {
-            name += " " + val;
-        } else {
-            name = val;
-        }
-        name = name.trim();
-    }
-
-    public void appendValue(final String val) {
+    public BlueSearchRecord setValue(final String value) {
         if (value != null) {
-            value += " " + val;
-        } else {
-            value = val;
+            final BlueParts tempBlueParts = BlueParts.of(value);
+            if (tempBlueParts != null) {
+                this.blueParts = tempBlueParts;
+            }
         }
-        value = value.trim();
+        return this;
     }
 
     public String toCsv() {
@@ -65,19 +56,18 @@ public class BlueSearchRecord {
 
     private String _toWhatever(final String delimiter) {
         try {
-            final BlueParts blueParts = BlueParts.of(value);
             if (blueParts == null) {
-                log.warn("toCsv: Null BlueParts");
                 return null;
             }
-            this.normalizedValue = blueParts.getNormalizedBluebook();
             return wrap(title) + delimiter +
                     wrap(subtitle) + delimiter +
                     wrap(subsubtitle) + delimiter +
                     wrap(name) + delimiter +
-                    wrap(value) + delimiter +
-                    wrap(normalizedValue) + delimiter +
+                    wrap(blueParts.getOriginalBluebook()) + delimiter +
+                    wrap(dates) + delimiter +
+                    wrap(blueParts.getNormalizedBluebook()) + delimiter +
                     wrap(note);
+
         } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }
@@ -97,6 +87,7 @@ public class BlueSearchRecord {
                 "subsubtitle" + delimiter +
                 "name" + delimiter +
                 "value" + delimiter +
+                "dates" + delimiter +
                 "normalizedValue" + delimiter +
                 "note";
     }

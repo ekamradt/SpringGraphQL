@@ -22,6 +22,10 @@ public enum BluePartType {
         if (Strings.isEmpty(partString)) {
             return EMPTY;
         }
+        // Special Cases
+        
+
+
         final int code = partString.codePointAt(0);
         if (Character.isAlphabetic(code) || THESE_ARE_ALPHA_ALSO.contains((char) code)) {
             return ALPHA;
@@ -30,7 +34,7 @@ public enum BluePartType {
             return NUMERIC;
         }
         if (partString.length() == 1) {
-            if (partString.equals(BluePart.SECTION_SYMBOL)) {
+            if (partString.equals(BluePart.SESSION_SYMBOL)) {
                 return SYMBOL;
             } else {
                 return MISC;

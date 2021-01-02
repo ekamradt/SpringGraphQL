@@ -12,12 +12,14 @@ import java.util.List;
 @Getter
 public class MatchPacket {
 
-    public static final String BLUEBOOK_IGNORE_CODE = "CODE";
+    public static final List<String> BLUEBOOK_IGNORE_CODES = List.of("CODE", "PART", "CHAPTER", "CHAPTERS", "RULES",
+            "SECTION");
+
+    private final String normalizedBluebook;
+    private final IndexPair indexPair;
 
     private List<String> alphaBits;
-    private String normalizedBluebook;
     private List<String> blueBits;
-    private final IndexPair indexPair;
     private int alphaCountdownSize;
 
     public MatchPacket(final BlueParts blueParts) {
@@ -26,13 +28,16 @@ public class MatchPacket {
 
         this.normalizedBluebook = blueParts.getNormalizedBluebook();
         final List<String> blueBits = Arrays.asList(normalizedBluebook.split(BluePart.SPACE));
-        this.alphaBits = blueBits.subList(indexPair.getIndexStart(), indexPair.getIndexEnd());
+        if (indexPair.haveIndexPair()) {
+            this.alphaBits = blueBits.subList(indexPair.getIndexStart(), indexPair.getIndexEnd());
+        }
     }
 
     public String getNormalizedAlphaBitsToMatch() {
         try {
             final StringBuilder val = new StringBuilder();
-            for (int i = 1; i <= alphaCountdownSize; i++) {
+            final int bitSize = alphaBits.size();
+            for (int i = 1; i <= alphaCountdownSize && i <= bitSize; i++) {
                 val.append(alphaBits.get(i - 1)).append(" ");
             }
             return val.toString().trim();
@@ -43,17 +48,33 @@ public class MatchPacket {
 
     // Remove the matched alpha bits, return what's left, if any.
     public void adjustAlphaBitsForFurtherMatches() {
-        alphaBits = alphaBits.subList(alphaCountdownSize, alphaBits.size());
-
-        // Ignore the word 'CODE' -- which followed a found alpha bit.
-        if (alphaBits.size() > 0 && alphaBits.get(0).equals(BLUEBOOK_IGNORE_CODE)) {
-            alphaBits = alphaBits.size() == 1 ? Lists.emptyList() : alphaBits.subList(1, alphaBits.size());
+        try {
+            alphaBits = alphaBits.subList(alphaCountdownSize, alphaBits.size());
+        } catch (Exception e) {
+            throw new IllegalArgumentException(
+                    String.format("alphaCountdownSize: '%s'  alphaBits.size:'%s'  err: %s",
+                            alphaCountdownSize, alphaBits.size(), e.getMessage()));
         }
-        alphaCountdownSize = alphaBits.size() + 1;
+        // Ignore some words -- which followed a found alpha bit.
+        if (alphaBits.size() > 0) {
+            for (final String ignoreThis : BLUEBOOK_IGNORE_CODES) {
+                if (alphaBits.get(0).equals(ignoreThis)) {
+                    alphaBits = alphaBits.size() == 1 ? Lists.emptyList() : alphaBits.subList(1, alphaBits.size());
+                    break;
+                }
+            }
+            alphaCountdownSize = alphaBits.size();
+        } else {
+            alphaCountdownSize = 0;
+        }
     }
 
     public void decrementAlphaCountdownSize() {
         alphaCountdownSize--;
+    }
+
+    public void decrementByAlphaBits() {
+        alphaCountdownSize -= alphaBits.size();
     }
 
     private IndexPair calculateFirstAlphaPart(final String pattern) {
@@ -76,9 +97,13 @@ public class MatchPacket {
             indexEnd = pattern.length();
         }
         int iSize = 0;
-        if (indexStart > -1 && indexEnd > -1) {
+        if (indexStart > -1) {
             iSize = indexEnd - indexStart;
         }
-        return IndexPair.builder().indexStart(indexStart).indexEnd(indexEnd).numberOfAlphas(iSize).build();
+        return IndexPair.builder()
+                .indexStart(indexStart)
+                .indexEnd(indexEnd)
+                .numberOfAlphas(iSize)
+                .build();
     }
 }

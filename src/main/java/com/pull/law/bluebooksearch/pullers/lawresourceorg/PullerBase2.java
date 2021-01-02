@@ -2,7 +2,7 @@ package com.pull.law.bluebooksearch.pullers.lawresourceorg;
 
 import com.pull.law.bluebooksearch.misc.BlueSearchRecord;
 import org.apache.commons.text.StringEscapeUtils;
-import org.apache.logging.log4j.util.Strings;
+import org.assertj.core.util.Strings;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -58,11 +58,11 @@ public abstract class PullerBase2 {
 
     private void writeLineInfos() {
         try {
-            final String content = BlueSearchRecord.headerPipe() + "\n" +
-                    blueSearchRecords.stream()
-                            .map(BlueSearchRecord::toPipe)
-                            .filter(Objects::nonNull)
-                            .collect(Collectors.joining("\n"));
+            final String lines = blueSearchRecords.stream()
+                    .map(BlueSearchRecord::toPipe)
+                    .filter(Objects::nonNull)
+                    .collect(Collectors.joining("\n"));
+            final String content = BlueSearchRecord.headerPipe() + "\n" + lines;
             final Path path = Path.of(OUTPUT_FILE);
             Files.writeString(path, content,
                     StandardOpenOption.CREATE, StandardOpenOption.APPEND, StandardOpenOption.WRITE);
@@ -128,33 +128,6 @@ public abstract class PullerBase2 {
         tempLine = line.replaceAll(tagBeg, "");
         tempLine = tempLine.replace(tagEnd, "");
         return tempLine.trim();
-    }
-
-    protected void outputLineInfo(final BlueSearchRecord inBlueSearchRecord) {
-        if (Strings.isEmpty(inBlueSearchRecord.getName()) || Strings.isEmpty(inBlueSearchRecord.getValue())) {
-            return;
-        }
-        blueSearchRecords.add(this.blueSearchRecord);
-        final BlueSearchRecord blueSearchRecord = parseNoteFromValue(inBlueSearchRecord);
-        System.out.printf("'%s' : '%s' : '%s' : '%s' : '%s'%n",
-                blueSearchRecord.getTitle(), blueSearchRecord.getSubtitle(), blueSearchRecord.getName(), blueSearchRecord.getValue(),
-                blueSearchRecord.getNote());
-    }
-
-    protected BlueSearchRecord parseNoteFromValue(final BlueSearchRecord inBlueSearchRecord) {
-        final BlueSearchRecord blueSearchRecord = BlueSearchRecord.copy(inBlueSearchRecord);
-        final String value = inBlueSearchRecord.getValue();
-        final int iStart = value.indexOf("(");
-        if (iStart >= 0) {
-            final int iEnd = value.indexOf(")", iStart);
-            if (iEnd >= 0) {
-                final String tempValue = value.substring(0, iStart);
-                final String tempNote = value.substring(iStart, iEnd);
-                blueSearchRecord.setValue(tempValue)
-                        .setNote(tempNote);
-            }
-        }
-        return blueSearchRecord;
     }
 
     protected boolean processLine(final String line) {
@@ -264,21 +237,25 @@ public abstract class PullerBase2 {
 
     private void fillLineInfoFromTdThree(final String line) {
         final LineParts lineParts = processThreeTd(line);
-        blueSearchRecord.setName(lineParts.getValueFirst());
-        blueSearchRecord.setDates(lineParts.getValueSecond());
-        blueSearchRecord.setValue(lineParts.getValueThird());
-        blueSearchRecords.add(blueSearchRecord);
-        blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
+        final String value = lineParts.getValueThird();
+        if (!Strings.isNullOrEmpty(value)) {
+            blueSearchRecord.setValue(value);
+            blueSearchRecord.setName(lineParts.getValueFirst());
+            blueSearchRecord.setDates(lineParts.getValueSecond());
+            blueSearchRecords.add(blueSearchRecord);
+            blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
+        }
     }
 
     private void fillLineInfoFromTdTwo(final String line) {
         final LineParts lineParts = processTwoTd(line);
-        blueSearchRecord.setName(lineParts.getValueFirst());
         final String valueSecond = lineParts.getValueSecond();
-        blueSearchRecord.setValue(valueSecond);
-        blueSearchRecords.add(blueSearchRecord);
-        blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
-        // lineInfo = new LineInfo();
+        if (!Strings.isNullOrEmpty(valueSecond)) {
+            blueSearchRecord.setValue(valueSecond);
+            blueSearchRecord.setName(lineParts.getValueFirst());
+            blueSearchRecords.add(blueSearchRecord);
+            blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
+        }
     }
 
     private LineParts processThreeTd(final String line) {

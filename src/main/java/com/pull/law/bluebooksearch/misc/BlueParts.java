@@ -1,55 +1,70 @@
 package com.pull.law.bluebooksearch.misc;
 
+import com.pull.law.bluebooksearch.pullers.lawresourceorg.FoundParts;
 import lombok.Getter;
+import lombok.Setter;
 import org.apache.logging.log4j.util.Strings;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
+
+import static com.pull.law.bluebooksearch.misc.BluePart.SESSION_SYMBOL;
+import static com.pull.law.bluebooksearch.misc.BluePart.SPACE;
 
 @Getter
 public class BlueParts {
-
-    public static final Set<String> IGNORE_LINES = new HashSet<>() {{
-        add("Applies to all products");
-    }};
-
 
     private String originalBluebook;
     private String normalizedBluebook;
     private String pattern;
     private List<BluePart> bluePartList;
+    private final BlueSpecial blueSpecial = new BlueSpecial();
+    @Setter
+    private FoundParts foundParts;
 
     public static BlueParts of(final String line) {
-        if (Strings.isEmpty(line) || IGNORE_LINES.contains(line)) {
+        if (Strings.isEmpty(line)) {
             return null;
         }
         final BlueParts blueParts = new BlueParts();
-        blueParts.originalBluebook = line;
-        blueParts.bluePartList = blueParts.concatAllParts(line);
+        final String originalBluebook = adjustLine(line);
+        blueParts.originalBluebook = originalBluebook;
+        blueParts.bluePartList = blueParts.concatAllParts(originalBluebook);
         blueParts.normalizedBluebook = blueParts.buildNormalizeParts();
         blueParts.pattern = blueParts.buildPattern();
         return blueParts;
     }
 
+    public static String normalizeValue(final String value) {
+        final BlueParts blueParts = of(value);
+        return blueParts != null ? blueParts.getNormalizedBluebook() : null;
+    }
+
+    private static String adjustLine(final String line) {
+        String temp = line.replace(SESSION_SYMBOL, " " + SESSION_SYMBOL + " ");
+        temp = temp.replaceAll("\\s+", SPACE);
+        return temp;
+    }
+
     private List<BluePart> concatAllParts(final String line) {
         String temp = line.trim();
-        temp = temp.replaceAll("[\\s|\\h]+", BluePart.SPACE);
-        final String[] parts = temp.split(BluePart.SPACE);
+        // Replace whitespace w/ a single space
+        temp = temp.replaceAll("[\\s|\\h]+", SPACE);
 
+        final String[] parts = temp.split(SPACE);
         return Arrays.stream(parts)
-                .map(BluePart::of)
+                .map(blueSpecial::buildBluePart)
                 .filter(BluePart::isNotEmpty)
                 .collect(Collectors.toList());
+
     }
 
     private String buildNormalizeParts() {
         String temp = bluePartList.stream()
                 .map(BluePart::getNormalizedPart)
-                .collect(Collectors.joining(BluePart.SPACE));
-        temp = temp.replaceAll("\\s+", BluePart.SPACE);
+                .collect(Collectors.joining(SPACE));
+        temp = temp.replaceAll("\\s+", SPACE);
         return temp;
     }
 

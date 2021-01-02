@@ -14,6 +14,7 @@ public class FoundParts {
     private BlueParts blueParts;
     private LimitType limitType = LimitType.ANY;
     private String state = null;
+    private Throwable throwable;
 
     public void addFoundPart(final FoundPart foundPart) {
         foundParts.add(foundPart);
