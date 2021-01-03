@@ -1,12 +1,10 @@
 package com.pull.law;
 
-import com.pull.law.bluebooksearch.misc.BlueParts;
-import com.pull.law.bluebooksearch.misc.BlueSearchRecord;
-import com.pull.law.bluebooksearch.pullers.lawresourceorg.ResourceOrgPuller;
-import com.pull.law.bluebooksearch.service.BlueSearchRecordService;
-import com.pull.law.bluebooksearch.service.BluebookParseService;
-import com.pull.law.bluebooksearch.service.BluebookSearchService;
-import com.pull.law.bluebooksearch.spreadsheet.FedInvComForm;
+import com.pull.law.bluebook.misc.BlueSearchRecord;
+import com.pull.law.bluebook.pullers.lawresourceorg.ResourceOrgPuller;
+import com.pull.law.bluebook.service.BlueSearchRecordService;
+import com.pull.law.bluebook.service.BluebookParseService;
+import com.pull.law.bluebook.service.BluebookSearchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
@@ -20,7 +18,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.stream.Collectors;
 
 
 @SpringBootApplication
@@ -45,32 +42,44 @@ public class Application {
 
         recordsToSearch.addAll(blueSearchRecordService.buildCustomRecordsToSearch());
 
+        recordsToSearch.forEach(rec -> {
+            System.out.println(rec.toPipe());
+        });
+
         System.out.println("*** END ***");
         System.out.println("*** END ***");
         System.out.println("*** END ***");
 
-        // Wells Fargo Spreadsheet 01
-        final List<FedInvComForm> forms = bluebookParseService.initForm01();
-        if (forms != null) {
-            final List<BlueParts> bluePartsList =
-                    forms.stream().map(FedInvComForm::getBlueParts).collect(Collectors.toList());
-            bluebookSearchService.findBlueParts(bluePartsList, recordsToSearch);
+        writeOracleTable(recordsToSearch);
 
-            String content = FedInvComForm.headerPipe() + "\n";
-
-            content = content + forms.stream()
-                    .filter(form -> !form.found())
-                    .map(FedInvComForm::toPipe)
-                    .collect(Collectors.joining("\n"));
-
-            content = content + forms.stream()
-                    .filter(FedInvComForm::found)
-                    .map(FedInvComForm::toPipe)
-                    .collect(Collectors.joining("\n"));
-
-            writeToFile("FedResult01.txt", content);
-        }
+        //        // Wells Fargo Spreadsheet 01
+        //        final List<FedInvComForm> forms = bluebookParseService.initForm01();
+        //        if (forms != null) {
+        //            final List<BlueParts> bluePartsList =
+        //                    forms.stream().map(FedInvComForm::getBlueParts).collect(Collectors.toList());
+        //            bluebookSearchService.findBlueParts(bluePartsList, recordsToSearch);
+        //
+        //            String content = FedInvComForm.headerPipe() + "\n";
+        //
+        //            content = content + forms.stream()
+        //                    .filter(form -> !form.found())
+        //                    .map(FedInvComForm::toPipe)
+        //                    .collect(Collectors.joining("\n"));
+        //
+        //            content = content + forms.stream()
+        //                    .filter(FedInvComForm::found)
+        //                    .map(FedInvComForm::toPipe)
+        //                    .collect(Collectors.joining("\n"));
+        //
+        //            writeToFile("FedResult01.txt", content);
+        //        }
         exitExit();
+    }
+
+    private void writeOracleTable(final List<BlueSearchRecord> recordsToSearch) {
+        final String createTable = BlueSearchRecord.creatOracleTable();
+        final String inserts = BlueSearchRecord.buildOracleInserts(recordsToSearch);
+        writeToFile("CREATE_CITATION_LOOKUP.sql", createTable + inserts);
     }
 
     private void writeToFile(final String filename, final String content) {
