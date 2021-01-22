@@ -2,7 +2,7 @@ package com.pull.law.blue;
 
 
 import com.pull.law.bluebook.misc.BlueConverter;
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -21,9 +21,9 @@ public class BlueFormatTest {
     @Test
     public void requiredParamMissingTest() {
         try {
-            final BlueParts blueParts = new BlueParts();
+            final BluePieces bluePieces = new BluePieces();
             final String formatString = BlueTestHelper.wrapRequiredParamNameForTemplate(PARAM_SESSION);
-            final String result = blueConverter.processFormat(formatString, blueParts);
+            final String result = blueConverter.processFormat(formatString, bluePieces);
             fail("BlueConvert was suppose to throw a required parameter exception.");
         } catch (Exception e) {
             ; //
@@ -33,10 +33,10 @@ public class BlueFormatTest {
     @Test
     public void requiredParamFounTest() {
         try {
-            final BlueParts blueParts = new BlueParts();
-            blueParts.setSession("X");
+            final BluePieces bluePieces = new BluePieces();
+            bluePieces.setSession("X");
             final String formatString = BlueTestHelper.wrapRequiredParamNameForTemplate(PARAM_SESSION);
-            final String result = blueConverter.processFormat(formatString, blueParts);
+            final String result = blueConverter.processFormat(formatString, bluePieces);
         } catch (Exception e) {
             fail("BlueConvert was suppose to NOT throw a required parameter exception.");
         }

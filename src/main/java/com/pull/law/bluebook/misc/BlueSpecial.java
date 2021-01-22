@@ -18,16 +18,16 @@ public class BlueSpecial {
         }
     }
 
-    public BluePart buildBluePart(final String part) {
+    public BluePiece buildBluePart(final String part) {
         adjustType(part);
         switch (specialType) {
             case ANY:
-                return BluePart.of(part);
+                return BluePiece.of(part);
             case MSRB:
                 if (part.startsWith("G-")) {
-                    return BluePart.forceNumeric(part);
+                    return BluePiece.forceNumeric(part);
                 } else {
-                    return BluePart.of(part);
+                    return BluePiece.of(part);
                 }
             default:
                 throw new IllegalArgumentException(String.format("BlueSpecialType not implemented '%s'", specialType));

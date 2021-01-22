@@ -10,6 +10,8 @@ public class PullGroup {
 
     private final String begGroup;
     private final String endGroup;
+    private final String title;
+    private final String subtitle;
     private final String titleGroup;
     private final String removeFromTitle;
     private final String removeFromSubtitle;

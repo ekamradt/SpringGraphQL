@@ -1,11 +1,11 @@
 package com.pull.law.bluebook.service;
 
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.misc.BlueSearchRecord;
 import com.pull.law.bluebook.misc.BlueFormatType;
 import com.pull.law.bluebook.pullers.lawresourceorg.FoundPart;
 import com.pull.law.bluebook.pullers.lawresourceorg.FoundParts;
-import com.pull.law.bluebook.search.MatchPacket;
+import com.pull.law.bluebook.search.BlueParseAssist;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class BluebookSearchService {
     private final FoundPartService foundPartService;
     private String alphaNormalized;
 
-    public void findBlueParts(final List<BlueParts> bluePartList, List<BlueSearchRecord> infos) {
+    public void findBlueParts(final List<BluePieces> bluePartList, List<BlueSearchRecord> infos) {
 
         final List<FoundParts> foundPartList = new ArrayList<>();
 
@@ -36,7 +36,7 @@ public class BluebookSearchService {
         bluePartList.forEach(blueParts -> {
             final FoundParts foundParts = new FoundParts();
             blueParts.setFoundParts(foundParts);
-            foundParts.setBlueParts(blueParts);
+            foundParts.setBluePieces(blueParts);
 
             searchOneBluebook(infos, blueParts, foundParts);
             foundPartList.add(foundParts);
@@ -64,54 +64,54 @@ public class BluebookSearchService {
     //  Or we didn't match something and we fail.
     //
     private void searchOneBluebook(
-            final List<BlueSearchRecord> recordsToSearch, final BlueParts blueParts, final FoundParts foundParts) {
+            final List<BlueSearchRecord> recordsToSearch, final BluePieces bluePieces, final FoundParts foundParts) {
 
         try {
-            final MatchPacket matchPacket = new MatchPacket(blueParts);
-            while (matchPacket.getAlphaCountdownSize() > 0) {
-                final String alphaNormalized = matchPacket.getNormalizedAlphaBitsToMatch();
+            final BlueParseAssist blueParseAssist = new BlueParseAssist(bluePieces);
+            while (blueParseAssist.getAlphaCountdownSize() > 0) {
+                final String alphaNormalized = blueParseAssist.getNormalizedAlphaBitsToMatch();
                 final List<BlueSearchRecord> matchingRecords = findMatchingRecords(recordsToSearch, alphaNormalized);
 
                 final int matchSize = matchingRecords.size();
                 if (matchSize > 0) {
                     foundParts.setMatchFound(true);
-                    savedMatchedInfoAdjustforNextSearch(foundParts, matchPacket, matchingRecords, alphaNormalized);
+                    savedMatchedInfoAdjustforNextSearch(foundParts, blueParseAssist, matchingRecords, alphaNormalized);
                 } else {
-                    if (foundParts.isMatchFound() && matchPacket.getAlphaCountdownSize() == 1) {
+                    if (foundParts.isMatchFound() && blueParseAssist.getAlphaCountdownSize() == 1) {
                         // Found first one or more, but others could not be found.
                         //  So the whole bluebook was not found.
                         markPartAsNotFound(foundParts, alphaNormalized);
                         foundParts.setMatchFound(false);
                         break;
                     }
-                    matchPacket.decrementAlphaCountdownSize();
+                    blueParseAssist.decrementAlphaCountdownSize();
                 }
             }
         } catch (Exception e) {
             log.error("{}  blue: '{}'  Norm: '{}'",
-                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
+                    foundParts.isMatchFound(), bluePieces.getOriginalBluebook(), bluePieces.getNormalizedBluebook());
             // throw new IllegalArgumentException(e);
             // foundParts.setMatchFound(false);
             // foundParts.setThrowable(e);
         }
         if (foundParts.isMatchFound()) {
             log.trace("{}  blue: '{}'  Norm: '{}'",
-                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
+                    foundParts.isMatchFound(), bluePieces.getOriginalBluebook(), bluePieces.getNormalizedBluebook());
         } else {
             // No match
             log.info("{}  blue: '{}'  Norm: '{}'",
-                    foundParts.isMatchFound(), blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook());
+                    foundParts.isMatchFound(), bluePieces.getOriginalBluebook(), bluePieces.getNormalizedBluebook());
         }
     }
 
     private void savedMatchedInfoAdjustforNextSearch(
-            final FoundParts foundParts, final MatchPacket matchPacket,
+            final FoundParts foundParts, final BlueParseAssist blueParseAssist,
             final List<BlueSearchRecord> foundSearchRecords, final String alphaNormalized) {
 
         final List<BlueSearchRecord> filteredInfos = checkIfFilteredThenFilter(foundParts, foundSearchRecords);
 
         // Remove the matched alpha bits, and if any left, we try to match the rest in a subsequent pass.
-        matchPacket.adjustAlphaBitsForFurtherMatches();
+        blueParseAssist.adjustAlphaBitsForFurtherMatches();
         flagBluebookIfToBeFiltered(foundParts, filteredInfos);
         storeTheFoundBluebookPart(foundParts, filteredInfos, alphaNormalized);
     }
@@ -135,7 +135,7 @@ public class BluebookSearchService {
         // If this specific blueblue is not marked as filtered, then check if it needs to be filtered.
         if (foundParts.getBlueFormatType() == BlueFormatType.ANY) {
             for (final BlueSearchRecord blueSearchRecord : matchedBlueSearchRecords) {
-                final String subsubtitle = blueSearchRecord.getSubsubtitle();
+                final String subsubtitle = blueSearchRecord.getCatLevel3();
 
                 // Check if this bluebook is to be filtered by a US State.
                 if (subsubtitle != null && subsubtitle.equals(LIMIT_TYPE_STATES)) {
@@ -154,7 +154,7 @@ public class BluebookSearchService {
     private List<BlueSearchRecord> checkIfFilteredThenFilter(final FoundParts foundParts, final List<BlueSearchRecord> foundSearchRecords) {
         if (foundParts.getBlueFormatType() == BlueFormatType.STATE) {
             final List<BlueSearchRecord> filteredFoundRecords = foundSearchRecords.stream()
-                    .filter(lineInfo -> lineInfo.getSubtitle().equals(foundParts.getState()))
+                    .filter(lineInfo -> lineInfo.getCatLevel2().equals(foundParts.getState()))
                     .collect(Collectors.toList());
             if (filteredFoundRecords.size() > 0) {
                 return filteredFoundRecords;
@@ -168,8 +168,8 @@ public class BluebookSearchService {
 
         final List<BlueSearchRecord> foundRecords = new ArrayList<>();
         tempBlueSearchRecords.forEach(searchRecord -> {
-            final BlueParts blueParts = searchRecord.getBlueParts();
-            final String normalizedBluebook = blueParts.getNormalizedBluebook();
+            final BluePieces bluePieces = searchRecord.getBluePieces();
+            final String normalizedBluebook = bluePieces.getNormalizedBluebook();
             if (normalizedBluebook.equals(alphaNormalized)) {
                 foundRecords.add(searchRecord);
             }

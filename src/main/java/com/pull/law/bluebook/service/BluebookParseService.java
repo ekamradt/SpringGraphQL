@@ -1,6 +1,6 @@
 package com.pull.law.bluebook.service;
 
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.spreadsheet.FedInvComForm;
 import lombok.RequiredArgsConstructor;
 import org.apache.logging.log4j.util.Strings;
@@ -32,41 +32,39 @@ public class BluebookParseService {
         return readAllIntoStruct01(FILENAME);
     }
 
-    private Collection<? extends BlueParts> buildKnowAbbreviations() {
-        final List<BlueParts> bluePartList = new ArrayList<>();
+    private Collection<? extends BluePieces> buildKnowAbbreviations() {
+        final List<BluePieces> bluePartList = new ArrayList<>();
         return bluePartList;
     }
 
     private List<FedInvComForm> readAllIntoStruct01(final String filename) {
-
         try {
             final String content = Files.readString(Path.of(filename));
             final String[] parts = content.split("\\n");
-
             final List<FedInvComForm> formList = Arrays.stream(parts)
                     .map(FedInvComForm::fromPipedLine)
                     .filter(Objects::nonNull)
                     .collect(Collectors.toList());
 
-            //// bluePartsList.forEach(b -> System.out.println(b.dump()));
+            // bluePartsList.forEach(b -> System.out.println(b.dump()));
             return formList;
         } catch (IOException e) {
             throw new IllegalArgumentException(e);
         }
     }
 
-    private List<BlueParts> readAll(final String filename) {
+    private List<BluePieces> readAll(final String filename) {
 
         try {
             final String content = Files.readString(Path.of(filename));
             final String[] parts = content.split("\\n");
-            final List<BlueParts> bluePartsList = Arrays.stream(parts)
-                    .map(BlueParts::of)
+            final List<BluePieces> bluePiecesList = Arrays.stream(parts)
+                    .map(BluePieces::of)
                     .filter(Objects::nonNull)
                     .collect(Collectors.toList());
 
             //// bluePartsList.forEach(b -> System.out.println(b.dump()));
-            return bluePartsList;
+            return bluePiecesList;
         } catch (IOException e) {
             throw new IllegalArgumentException(e);
         }
@@ -81,14 +79,14 @@ public class BluebookParseService {
 
     private String getBluePartTemplate(final String line) {
 
-        final BlueParts pattern = parseIntoBluePart(line);
+        final BluePieces pattern = parseIntoBluePart(line);
 
 
         // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
         return null;
     }
 
-    private BlueParts parseIntoBluePart(final String part) {
+    private BluePieces parseIntoBluePart(final String part) {
         if (Strings.isEmpty(part)) {
             return null;
         }

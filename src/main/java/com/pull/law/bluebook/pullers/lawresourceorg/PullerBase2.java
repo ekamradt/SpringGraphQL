@@ -145,6 +145,7 @@ public abstract class PullerBase2 {
                 groupIndex++;
                 pullGroup = pullGroups.get(groupIndex);
                 processGroup = false;
+                blueSearchRecord.reset();
                 // The end of one section and the start of another might be the same line.
                 if (!line.contains(pullGroup.getBegGroup())) {
                     return true;
@@ -183,21 +184,48 @@ public abstract class PullerBase2 {
         }
     }
 
+    private void setManualTitleIfExist() {
+        if (pullGroup.getTitle() != null) {
+            blueSearchRecord.setCatLevel1(pullGroup.getTitle());
+        }
+    }
+
+    private void setManualSubtitleIfExist() {
+        if (pullGroup.getSubtitle() != null) {
+            blueSearchRecord.setCatLevel2(pullGroup.getSubtitle());
+        }
+    }
+
     private boolean extractedTitles(final String line) {
-        if (lineContains(line, pullGroup.getTitleGroup())) {
-            extractTitle(line);
-            return true;
+        if (Strings.isNullOrEmpty(pullGroup.getTitleGroup())) {
+            setManualTitleIfExist();
+        } else {
+            if (lineContains(line, pullGroup.getTitleGroup())) {
+                extractTitle(line);
+                return true;
+            }
         }
 
-        if (lineContains(line, pullGroup.getSubtitleGroup())) {
-            extractSubtitle(line);
-            return true;
+        if (Strings.isNullOrEmpty(pullGroup.getSubtitleGroup())) {
+            setManualSubtitleIfExist();
+        } else {
+            if (lineContains(line, pullGroup.getSubtitleGroup())) {
+                extractSubtitle(line);
+                if (pullGroup.getSubtitle() != null) {
+                    final String subtitle = pullGroup.getSubtitle();
+                    if (blueSearchRecord.getCatLevel2().startsWith(subtitle)) {
+                        blueSearchRecord.setCatLevel2(subtitle);
+                    }
+                }
+                return true;
+            }
         }
 
         if (lineContains(line, pullGroup.getSubsubtitleGroup())) {
             extractSubsubtitle(line);
             return true;
         }
+
         return false;
     }
 
@@ -205,7 +233,7 @@ public abstract class PullerBase2 {
         blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
         String subsubtitle = stripStartAndEndTag(line);
         subsubtitle = cleanString(subsubtitle);
-        blueSearchRecord.setSubsubtitle(subsubtitle);
+        blueSearchRecord.setCatLevel3(subsubtitle);
     }
 
     private void extractSubtitle(final String line) {
@@ -218,7 +246,7 @@ public abstract class PullerBase2 {
         }
         subtitle = subtitle.replace(pullGroup.getRemoveIfExists(), "");
         subtitle = subtitle.trim();
-        blueSearchRecord.setSubtitle(subtitle);
+        blueSearchRecord.setCatLevel2(subtitle);
     }
 
     private void extractTitle(final String line) {
@@ -231,7 +259,7 @@ public abstract class PullerBase2 {
         }
         title = title.replace(pullGroup.getRemoveIfExists(), "");
         title = title.trim();
-        blueSearchRecord.setTitle(title);
+        blueSearchRecord.setCatLevel1(title);
     }
 
     private boolean lineContains(final String line, final String value) {
@@ -244,39 +272,9 @@ public abstract class PullerBase2 {
         if (!Strings.isNullOrEmpty(value)) {
             blueSearchRecord.setValue(value);
             blueSearchRecord.setName(lineParts.getValueFirst());
-            setDates(blueSearchRecord, lineParts.getValueSecond());
+            //setDates(blueSearchRecord, lineParts.getValueSecond());
             blueSearchRecords.add(blueSearchRecord);
             blueSearchRecord = BlueSearchRecord.copyTitles(blueSearchRecord);
-        }
-    }
-
-    private void setDates(final BlueSearchRecord blueSearchRecord, final String value) {
-        if (!Strings.isNullOrEmpty(value)) {
-            // String temp = new String(value.getBytes(StandardCharsets.US_ASCII), StandardCharsets.UTF_8).trim();
-            String temp = cleanString(value);
-            temp = temp.replace("?", "-");
-            String[] vals = temp.split("\\|");
-            if (vals.length != 2) {
-                vals = temp.split("-");
-                if (vals.length != 2) {
-                    boolean found = false;
-                    if (vals.length == 1) {
-                        String tempDate = vals[0];
-                        if (isDate(tempDate)) {
-                            vals = new String[2];
-                            vals[0] = tempDate;
-                            vals[1] = tempDate;
-                            found = true;
-                        }
-                    }
-                    if (!found) {
-                        final String errMsg = String.format("Dates not parsable '%s' '%s'", value, temp);
-                        throw new IllegalArgumentException(errMsg);
-                    }
-                }
-            }
-            blueSearchRecord.setStartDate(vals[0]);
-            blueSearchRecord.setEndDate(vals[1]);
         }
     }
 

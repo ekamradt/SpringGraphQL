@@ -1,6 +1,6 @@
 package com.pull.law.bluebook.service;
 
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.misc.BlueSearchRecord;
 import com.pull.law.bluebook.pullers.lawresourceorg.FoundParts;
 import lombok.RequiredArgsConstructor;
@@ -14,10 +14,10 @@ public class FoundPartService {
 
     public void dumpFoundParts(final List<FoundParts> foundPartList) {
         foundPartList.forEach(foundParts -> {
-            final BlueParts blueParts = foundParts.getBlueParts();
+            final BluePieces bluePieces = foundParts.getBluePieces();
             out("----------");
             out("WellsFarge bluebook: '%s'  normalized: '%s'  Did it match: %s ",
-                    blueParts.getOriginalBluebook(), blueParts.getNormalizedBluebook(), foundParts.isMatchFound());
+                    bluePieces.getOriginalBluebook(), bluePieces.getNormalizedBluebook(), foundParts.isMatchFound());
             foundParts.getFoundParts().forEach(foundPart -> {
 
                 out("  Part: '%s' ", foundPart.getAlphaNormalized());

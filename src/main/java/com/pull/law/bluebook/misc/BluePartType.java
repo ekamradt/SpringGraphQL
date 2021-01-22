@@ -34,7 +34,7 @@ public enum BluePartType {
             return NUMERIC;
         }
         if (partString.length() == 1) {
-            if (partString.equals(BluePart.SESSION_SYMBOL)) {
+            if (partString.equals(BluePiece.SESSION_SYMBOL)) {
                 return SYMBOL;
             } else {
                 return MISC;

@@ -7,7 +7,7 @@ import org.apache.logging.log4j.util.Strings;
 
 @Getter
 @ToString
-public class BluePart {
+public class BluePiece {
     public static final String SPACE = " ";
     public static final String EMPTY_STRING = "";
     public static final String SESSION_SYMBOL = "§";
@@ -16,34 +16,34 @@ public class BluePart {
     private String originalPart;
     private String normalizedPart;
 
-    public static BluePart of(final String partString) {
+    public static BluePiece of(final String partString) {
         if (Strings.isEmpty(partString)) {
             return emptyPart();
         }
         return _of(partString, BluePartType.of(partString));
     }
 
-    public static BluePart forceNumeric(final String partString) {
+    public static BluePiece forceNumeric(final String partString) {
         if (Strings.isEmpty(partString)) {
             return emptyPart();
         }
         return _of(partString, BluePartType.NUMERIC);
     }
 
-    private static BluePart _of(final String partString, final BluePartType bluePartType) {
-        final BluePart bluePart = new BluePart();
-        bluePart.partType = bluePartType;
-        bluePart.originalPart = partString;
-        bluePart.normalizedPart = bluePart.normalizeBluePart();
-        return bluePart;
+    private static BluePiece _of(final String partString, final BluePartType bluePartType) {
+        final BluePiece bluePiece = new BluePiece();
+        bluePiece.partType = bluePartType;
+        bluePiece.originalPart = partString;
+        bluePiece.normalizedPart = bluePiece.normalizeBluePart();
+        return bluePiece;
     }
 
-    public static BluePart emptyPart() {
-        final BluePart bluePart = new BluePart();
-        bluePart.partType = BluePartType.EMPTY;
-        bluePart.originalPart = EMPTY_STRING;
-        bluePart.normalizedPart = EMPTY_STRING;
-        return bluePart;
+    public static BluePiece emptyPart() {
+        final BluePiece bluePiece = new BluePiece();
+        bluePiece.partType = BluePartType.EMPTY;
+        bluePiece.originalPart = EMPTY_STRING;
+        bluePiece.normalizedPart = EMPTY_STRING;
+        return bluePiece;
     }
 
     public String getTypeCode() {

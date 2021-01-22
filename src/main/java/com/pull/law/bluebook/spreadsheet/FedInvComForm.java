@@ -1,6 +1,6 @@
 package com.pull.law.bluebook.spreadsheet;
 
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.pullers.lawresourceorg.FoundParts;
 import lombok.Getter;
 import org.assertj.core.util.Strings;
@@ -14,7 +14,7 @@ public class FedInvComForm {
     private String issuingType;
     private String citation;
     private String citationUrl;
-    private BlueParts blueParts;
+    private BluePieces bluePieces;
 
     public static FedInvComForm fromPipedLine(final String line) {
         final String temp = line + "|\"\"|\"\"|\"\"|\"\"|\"\"|\"\"|\"\"|\"\"|\"\"";
@@ -31,22 +31,22 @@ public class FedInvComForm {
         if (Strings.isNullOrEmpty(fedInvComForm.citation)) {
             return null;
         }
-        fedInvComForm.blueParts = BlueParts.of(fedInvComForm.citation);
+        fedInvComForm.bluePieces = BluePieces.of(fedInvComForm.citation);
         return fedInvComForm;
     }
 
     public boolean found() {
         FoundParts foundParts = null;
-        if (blueParts != null) {
-            foundParts = blueParts.getFoundParts();
+        if (bluePieces != null) {
+            foundParts = bluePieces.getFoundParts();
         }
         return foundParts != null && foundParts.isMatchFound();
     }
 
     public String toPipe() {
         String normalized = "";
-        if (blueParts != null) {
-            normalized = blueParts.getNormalizedBluebook();
+        if (bluePieces != null) {
+            normalized = bluePieces.getNormalizedBluebook();
         }
         return String.format("%s|%s|%s|%s|%s|%s|%s",
                 found(), citation, normalized, source, shortName, issuingBody, issuingType);

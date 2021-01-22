@@ -1,6 +1,6 @@
 package com.pull.law.bluebook.pullers.lawresourceorg;
 
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.misc.BlueFormatType;
 import lombok.Data;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class FoundParts {
     private List<FoundPart> foundParts = new ArrayList<>();
     private boolean matchFound = false;
-    private BlueParts blueParts;
+    private BluePieces bluePieces;
     private BlueFormatType blueFormatType = BlueFormatType.ANY;
     private String state = null;
     private Throwable throwable;

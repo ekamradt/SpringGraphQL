@@ -13,40 +13,47 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Data
 @Accessors(chain = true)
 public class BlueSearchRecord {
-    private String title = "";
-    private String subtitle = "";
-    private String subsubtitle = "";
+    private String catLevel1 = "";
+    private String catLevel2 = "";
+    private String catLevel3 = "";
+    private String catLevel4 = "";
     private String name = "";
-    private BlueParts blueParts;
-    private String startDate = "";
-    private String endDate = "";
+    private BluePieces bluePieces;
     private String note = "";
-    private String urlAddress = "";
+
+    public void reset() {
+        catLevel1 = "";
+        catLevel2 = "";
+        catLevel3 = "";
+        catLevel4 = "";
+        name = "";
+        bluePieces = null;
+        note = "";
+    }
 
     public static BlueSearchRecord copy(final BlueSearchRecord inBlueSearchRecord) {
         return new BlueSearchRecord()
-                .setTitle(inBlueSearchRecord.getTitle())
-                .setSubtitle(inBlueSearchRecord.getSubtitle())
-                .setSubsubtitle(inBlueSearchRecord.getSubsubtitle())
+                .setCatLevel1(inBlueSearchRecord.getCatLevel1())
+                .setCatLevel2(inBlueSearchRecord.getCatLevel2())
+                .setCatLevel3(inBlueSearchRecord.getCatLevel3())
+                .setCatLevel4(inBlueSearchRecord.getCatLevel4())
                 .setName(inBlueSearchRecord.getName())
-                .setStartDate(inBlueSearchRecord.getStartDate())
-                .setEndDate(inBlueSearchRecord.getEndDate())
-                .setBlueParts((inBlueSearchRecord.getBlueParts()))
+                .setBluePieces((inBlueSearchRecord.getBluePieces()))
                 .setNote(inBlueSearchRecord.getNote());
     }
 
     public static BlueSearchRecord copyTitles(final BlueSearchRecord inBlueSearchRecord) {
         return new BlueSearchRecord()
-                .setTitle(inBlueSearchRecord.getTitle())
-                .setSubtitle(inBlueSearchRecord.getSubtitle())
-                .setSubsubtitle(inBlueSearchRecord.getSubsubtitle());
+                .setCatLevel1(inBlueSearchRecord.getCatLevel1())
+                .setCatLevel2(inBlueSearchRecord.getCatLevel2())
+                .setCatLevel3(inBlueSearchRecord.getCatLevel3());
     }
 
     public BlueSearchRecord setValue(final String value) {
         if (value != null) {
-            final BlueParts tempBlueParts = BlueParts.of(value);
-            if (tempBlueParts != null) {
-                this.blueParts = tempBlueParts;
+            final BluePieces tempBluePieces = BluePieces.of(value);
+            if (tempBluePieces != null) {
+                this.bluePieces = tempBluePieces;
             }
         }
         return this;
@@ -62,21 +69,24 @@ public class BlueSearchRecord {
 
     private String _toWhatever(final String delimiter) {
         try {
-            if (blueParts == null) {
+            if (bluePieces == null) {
                 return null;
             }
-            return wrap(title) + delimiter +
-                    wrap(subtitle) + delimiter +
-                    wrap(subsubtitle) + delimiter +
+            return wrap(catLevel1) + delimiter +
+                    wrap(catLevel2) + delimiter +
+                    wrap(catLevel3) + delimiter +
+                    wrap(catLevel4) + delimiter +
                     wrap(name) + delimiter +
-                    wrap(blueParts.getOriginalBluebook()) + delimiter +
-                    wrap(blueParts.getNormalizedBluebook()) + delimiter +
-                    wrap(startDate) + delimiter +
-                    wrap(endDate) + delimiter +
+                    wrap(bluePieces.getOriginalBluebook()) + delimiter +
+                    wrap(bluePieces.getNormalizedBluebook()) + delimiter +
                     wrap(note);
         } catch (Exception e) {
             throw new IllegalArgumentException(e);
         }
+    }
+
+    private String wrap(final String msg) {
+        return Strings.isEmpty(msg) ? "\"\"" : "\"" + msg + "\"";
     }
 
     public static String headerCsv() {
@@ -88,38 +98,36 @@ public class BlueSearchRecord {
     }
 
     private static String _header(final String delimiter) {
-        return "title" + delimiter +
-                "subtitle" + delimiter +
-                "subsubtitle" + delimiter +
+        return "cat_level_1" + delimiter +
+                "cat_level_2" + delimiter +
+                "cat_level_3" + delimiter +
+                "cat_level_4" + delimiter +
                 "name" + delimiter +
-                "bluebook_original" + delimiter +
-                "bluebook_normalized" + delimiter +
-                "start_date" + delimiter +
-                "end_date" + delimiter +
+                "value_original" + delimiter +
+                "value_normalized" + delimiter +
                 "note";
-    }
-
-    private String wrap(final String msg) {
-        return msg;
-        // return Strings.isEmpty(msg) ? "\"\"" : "\"" + msg + "\"";
     }
 
     public static String creatOracleTable() {
         final StringBuilder sb = new StringBuilder();
         sb
-                .append("DROP TABLE law_sync.CITATION_LOOKUP; \n")
-                .append("CREATE TABLE law_sync.CITATION_LOOKUP ( \n")
+                .append("DROP TABLE CITATION_LOOKUP; \n")
+                .append("CREATE TABLE CITATION_LOOKUP ( \n")
                 .append("  id                  INT GENERATED BY DEFAULT AS IDENTITY (START WITH 1) PRIMARY KEY \n")
-                .append(", title               varchar(4000) NOT NULL \n")
-                .append(", subtitle            varchar(4000) \n")
-                .append(", subsubtitle         varchar(4000) \n")
-                .append(", name                varchar(4000) \n")
-                .append(", abbrev_original     varchar(4000) NOT NULL \n")
-                .append(", abbrev_normalized   varchar(4000) \n")
-                .append(", start_date          varchar(128) \n")
-                .append(", end_date            varchar(128) \n")
+                .append(", deleted             NUMBER(1,0) DEFAULT 0 NOT NULL \n")
+                .append(", created             TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL \n")
+                .append(", modified            TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL \n")
+                .append(", cat_level_1         varchar(256) NOT NULL \n")
+                .append(", cat_level_2         varchar(256)  \n")
+                .append(", cat_level_3         varchar(256)  \n")
+                .append(", cat_level_4         varchar(256)  \n")
+                .append(", name                varchar(256)  NOT NULL \n")
+                .append(", value_original      varchar(256) NOT NULL \n")
+                .append(", value_normalized    varchar(256) \n")
                 .append(", note                varchar(4000) \n")
-                .append("); \n\n")
+                .append("); \n")
+                .append("CREATE INDEX citation_lookup_cats_idx ON citation_lookup( cat_level_1, cat_level_2, cat_level_3, cat_level_4 ); \n")
+                .append("\n\n")
         ;
         return sb.toString();
     }
@@ -142,19 +150,25 @@ public class BlueSearchRecord {
         final AtomicInteger i = new AtomicInteger(0);
         for (final BlueSearchRecord rec : recs) {
             sb // Do not list 'id', oracle will fill it in
-                    .append("INSERT ")
-                    .append("INTO law_sync.citation_lookup( title, subtitle, subsubtitle, name, " +
-                            "abbrev_original, abbrev_normalized, start_date, end_date, note ) \n")
+                    .append("INSERT INTO citation_lookup( " +
+                            "cat_level_1, " +
+                            "cat_level_2, " +
+                            "cat_level_3, " +
+                            "cat_level_4, " +
+                            "name, " +
+                            "value_original, " +
+                            "value_normalized, " +
+                            "note " +
+                            ") \n")
                     .append(" VALUES (")
-                    .append(wrapSingleQuote(rec.title)).append(", ")
-                    .append(wrapSingleQuote(rec.subtitle)).append(", ")
-                    .append(wrapSingleQuote(rec.subsubtitle)).append(", ")
+                    .append(wrapSingleQuote(rec.catLevel1)).append(", ")
+                    .append(wrapSingleQuote(rec.catLevel2)).append(", ")
+                    .append(wrapSingleQuote(rec.catLevel3)).append(", ")
+                    .append(wrapSingleQuote(rec.catLevel4)).append(", ")
                     .append(wrapSingleQuote(rec.name)).append(", ")
-                    .append(wrapSingleQuote(rec.blueParts.getOriginalBluebook())).append(", ")
-                    .append(wrapSingleQuote(rec.blueParts.getNormalizedBluebook())).append(", ")
-                    .append(wrapSingleQuote(rec.startDate)).append(", ")
-                    .append(wrapSingleQuote(rec.endDate)).append(", ")
-                    .append(wrapSingleQuote(rec.note)).append(");\n ")
+                    .append(wrapSingleQuote(rec.bluePieces.getOriginalBluebook())).append(", ")
+                    .append(wrapSingleQuote(rec.bluePieces.getNormalizedBluebook())).append(", ")
+                    .append(wrapSingleQuote(rec.note)).append(");\n")
             ;
         }
         return sb.toString();

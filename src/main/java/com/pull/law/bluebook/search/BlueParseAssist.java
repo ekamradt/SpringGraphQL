@@ -1,7 +1,7 @@
 package com.pull.law.bluebook.search;
 
-import com.pull.law.bluebook.misc.BluePart;
-import com.pull.law.bluebook.misc.BlueParts;
+import com.pull.law.bluebook.misc.BluePiece;
+import com.pull.law.bluebook.misc.BluePieces;
 import com.pull.law.bluebook.misc.IndexPair;
 import lombok.Getter;
 import org.assertj.core.util.Lists;
@@ -10,10 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @Getter
-public class MatchPacket {
+public class BlueParseAssist {
 
-    public static final List<String> BLUEBOOK_IGNORE_CODES = List.of("CODE", "PART", "CHAPTER", "CHAPTERS", "RULES",
-            "SECTION");
+//    public static final List<String> BLUEBOOK_IGNORE_CODES = List.of("CODE", "PART", "CHAPTER", "CHAPTERS", "RULES",
+//            "SECTION");
 
     private final String normalizedBluebook;
     private final IndexPair indexPair;
@@ -22,12 +22,12 @@ public class MatchPacket {
     private List<String> blueBits;
     private int alphaCountdownSize;
 
-    public MatchPacket(final BlueParts blueParts) {
-        this.indexPair = calculateFirstAlphaPart(blueParts.getPattern());
+    public BlueParseAssist(final BluePieces bluePieces) {
+        this.indexPair = calculateFirstAlphaPart(bluePieces.getPattern());
         this.alphaCountdownSize = getIndexPair().getNumberOfAlphas();
 
-        this.normalizedBluebook = blueParts.getNormalizedBluebook();
-        final List<String> blueBits = Arrays.asList(normalizedBluebook.split(BluePart.SPACE));
+        this.normalizedBluebook = bluePieces.getNormalizedBluebook();
+        final List<String> blueBits = Arrays.asList(normalizedBluebook.split(BluePiece.SPACE));
         if (indexPair.haveIndexPair()) {
             this.alphaBits = blueBits.subList(indexPair.getIndexStart(), indexPair.getIndexEnd());
         }
@@ -56,17 +56,17 @@ public class MatchPacket {
                             alphaCountdownSize, alphaBits.size(), e.getMessage()));
         }
         // Ignore some words -- which followed a found alpha bit.
-        if (alphaBits.size() > 0) {
-            for (final String ignoreThis : BLUEBOOK_IGNORE_CODES) {
-                if (alphaBits.get(0).equals(ignoreThis)) {
-                    alphaBits = alphaBits.size() == 1 ? Lists.emptyList() : alphaBits.subList(1, alphaBits.size());
-                    break;
-                }
-            }
-            alphaCountdownSize = alphaBits.size();
-        } else {
-            alphaCountdownSize = 0;
-        }
+        //        if (alphaBits.size() > 0) {
+        //            for (final String ignoreThis : BLUEBOOK_IGNORE_CODES) {
+        //                if (alphaBits.get(0).equals(ignoreThis)) {
+        //                    alphaBits = alphaBits.size() == 1 ? Lists.emptyList() : alphaBits.subList(1, alphaBits.size());
+        //                    break;
+        //                }
+        //            }
+        //            alphaCountdownSize = alphaBits.size();
+        //        } else {
+        //            alphaCountdownSize = 0;
+        //        }
     }
 
     public void decrementAlphaCountdownSize() {
