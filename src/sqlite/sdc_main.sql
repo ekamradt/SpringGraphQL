@@ -10,6 +10,8 @@ create table sdc_main (
 , leg_subtype         text
 , leg_subsubtype      text
 , leg_date            text
+, citation_form       text
+, citation_example    text
 , fullfilename        text
 );
 

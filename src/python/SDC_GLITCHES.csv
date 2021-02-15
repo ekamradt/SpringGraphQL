@@ -1,0 +1,11 @@
+source|file|error|docType|rank|levelName|fullFilename
+INNODATA|sdc-south-carolina-ratifications-and-acts.xml|No law type data found for 'SOUTH_CAROLINA_RATIFICATIONS_AND_ACTS'|SOUTH_CAROLINA_RATIFICATIONS_AND_ACTS|8|SECTION|/home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+INNODATA|sdc-gpo-public-laws.xml|citation format Pub. L. No. {{LAW_NUMBER_DATE}} is missing GPO|GPO_PUBLIC_LAWS|1|GPO_PUBLIC_LAWS|/home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+INNODATA|sdc-gpo-public-laws.xml|citation format {{ACT_TITLE}}, Pub. L. No. {{LAW_NUMBER_DATE}} is missing GPO|GPO_PUBLIC_LAWS|2|LAW_NUMBER_DATE|/home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+DCL|sdc-california-statutory-code-alternative2.xml|No law type data found for 'CALIFORNIA_STATUTORY_CODE2'|CALIFORNIA_STATUTORY_CODE2|||/home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+DCL|sdc-california-statutory-code-alternative.xml|No law type data found for 'CALIFORNIA_STATUTORY_CODE1'|CALIFORNIA_STATUTORY_CODE1|||/home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+DCL|sdc-fed-res-sr-letters.xml|citation format SR {{LETTER}} is missing Federal Reserve|FEDERAL_RESERVE_SR_LETTERS|1|FEDERAL_RESERVE_SR_LETTERS|/home/ekamradt/git/data-dcl-sdc/US/US/sdc-fed-res-sr-letters.xml
+DCL|sdc-basel-committee-coordination-bulletins.xml|citation format BCC Bulletin {{BULLETIN}} is missing Federal Reserve|FEDERAL_RESERVE_BCC_BULLETINS|1|FEDERAL_RESERVE_BCC_BULLETINS|/home/ekamradt/git/data-dcl-sdc/US/US/sdc-basel-committee-coordination-bulletins.xml
+DCL|sdc-basel-committee-coordination-bulletins.xml|citation format BCC Bulletin {{BULLETIN}}, "{{SUBJECT}}" is missing Federal Reserve|FEDERAL_RESERVE_BCC_BULLETINS|2|BULLETIN|/home/ekamradt/git/data-dcl-sdc/US/US/sdc-basel-committee-coordination-bulletins.xml
+DCL|sdc-occ-advisory-letters.xml|citation format AL {{LETTER}} is missing OCC|OCC_LETTERS|1|OCC_LETTERS|/home/ekamradt/git/data-dcl-sdc/US/US/sdc-occ-advisory-letters.xml
+DCL|sdc-code-of-ordinances-of-cook-county.xml|No law type data found for 'ILLINOIS'|ILLINOIS|7|PARAGRAPH|/home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml

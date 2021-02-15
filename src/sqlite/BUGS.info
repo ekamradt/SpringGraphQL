@@ -1,0 +1,121 @@
+
+* ****************************************************************************************************
+* These are not correct bluebooks/citation formats and would be hard or impossible to parse and match.
+* ****************************************************************************************************
+
+-----------------------------------------------------
+From the database table LAW_DOCUMENT_ELEMENT
+    Some of thse blueblloks seem a little wordy.
+    Others not wordy enough.
+-----------------------------------------------------
+bluebook: Texas  Code § SUBTITLE G..(Sec. 38.033. SCHOOL HEALTH AND RELATED SERVICES PROGRAM; ELIGIBILITY FOR AUDIOLOGY SERVICES.)
+section_id : TEXAS_STATUTES.TITLE-EDUCATIONCODE.SUBTITLE-TITLE2.CHAPTER-SUBTITLEG.SUBCHAPTER-CHAPTER38.ARTICLE-SUBCHAPTERA.PARAGRAPH-Sec38033SCHOOLHEALTHANDRELATEDSERVICESPROGRAMELIGIBILITYFORAUDIOLOGYSERVICES.
+
+bluebook : Wyo. Stat. § 24-2-2020 this section will read as:]
+section id : WYOMING_STATUTES.TITLE-000024.CHAPTER-000002.SECTION-2020thissectionwillreadas.
+
+bluebook: 54 Part II
+section id: CONNECTICUT_STATUTES.VOLUME-000013.TITLE-000054.CHAPTER-000961.PART-0000II.
+
+bluebook: Ariz. Admin. Code § 2-5-R2-5A-803. Employee Request for Review of Disciplinary Action
+section id: ARIZONA_ADMINISTRATIVE_CODE.TITLE-000002.CHAPTER-000005.ARTICLE-000008.SECTION-R25A803EmployeeRequestforReviewofDisciplinaryAction.
+
+bluebook: ARTICLE ARTICLE III
+section id: WYOMING_STATUTES.TITLE-000037.CHAPTER-000014.ARTICLE-ARTICLEIII.
+
+bluebook: Minn. R., Trade and Economic Development Department 4290 to 4360, ch. 4290
+section id: MINNESOTA_ADMINISTRATIVE_RULES.AGENCYNAME-TradeandEconomicDevelopmentDepartment4290to4360.CHAPTER-004290.
+
+-------------------------------------------
+From the database table LAW_DOCUMENT_LEVEL
+-------------------------------------------
+citation_format: "PART_IN_PART {{PART_IN_PART}}"
+level: VIRGINA CODE/SUBTITLE
+
+citation_format: "{{TITLE}}"
+level: VIRGINA CODE/SUBTITLE
+    *AND* DC_CODE/SUBCHAPTER
+    *AND* CONNECTICUT_STATUTES/CHAPTER
+
+citation_format: "ARTICLE {{ARTICLE}}"
+level: VIRGINA CODE/ARTICLE
+    *AND* WYOMING_STATUTES/ARTICLE
+    *AND* CONNECTICUT_STATUTES/ARTICLE
+
+citaiton format: "VOLUME {{VOLUME}}"
+level: CONNECTICUT_STATUTES/VOLUME
+
+citation format: "{{TITLE}} Part {{PART}}"
+level: CONNECTICUT_STATUTES/PART
+    *AND*  ARIZONA_ADMINISTRATIVE_CODE/PART
+    *AND*  COLORADO_STATUTES/PART
+
+citation_format: ARIZONA_ADMINISTRATIVE_CODE {{ARIZONA_ADMINISTRATIVE_CODE}}
+level: ARIZONA_ADMINISTRATIVE_CODE/ARIZONA_ADMINISTRATIVE_CODE
+
+citation_format: COLORADO_STATUTES {{COLORADO_STATUTES}}
+level: COLORADO_STATUTES/COLORADO_STATUTES
+
+citation_format: CONNECTICUT_STATUTES {{CONNECTICUT_STATUTES}}
+level: CONNECTICUT_STATUTES/CONNECTICUT_STATUTES
+
+citation_format: DC_CODE {{DC_CODE}}
+level: DC_CODE/DC_CODE
+
+citation_format: DIVISION {{DIVISION}}
+level: DC_CODE/DIVISION
+
+citation_format: TEXAS_STATUTES {{TEXAS_STATUTES}}
+level: TEXAS_STATUTES/TEXAS_STATUTES
+
+citation_format: US_VA {{US_VA}}
+level: VIRGINIA_CODE/US_VA
+
+citation_format: VIRGINIA_CODE {{VIRGINIA_CODE}}
+level: VIRGINIA_CODE/VIRGINIA_CODE
+
+citation_format: WYOMING_STATUTES {{WYOMING_STATUTES}}
+level: WYOMING_STATUTES/WYOMING_STATUTES
+
+---------------------------------------------------
+Questions on LAW_DOCUMENT_LEVEL (citation_format):
+---------------------------------------------------
+Q: Why do some of these have "tit." and some have '§'?  Maybe it (§) indicates there is a SECTION?
+    But I feel these should all have the same format not some with dashes '-' and some with abbreviations (ch. tit. art.)
+    (The legal bluebook & baby blue use dashes, but if you want the other, that's fine ... just pick one)
+
+    *** The two styles make it harder to parse ***
+    
+    Ariz. Admin. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}
+    Ariz. Admin. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}})
+    Ariz. Admin. Code, tit. {{TITLE}}
+    Ariz. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}
+    Ariz. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}
+
+Same as above - seems inconsistent:
+
+    Fla. Stat. § {{CHAPTER}}.{{SECTION}}
+    Fla. Stat. § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})
+    Fla. Stat. ch. {{CHAPTER}}
+    Fla. Stat. ch. {{CHAPTER}}, pt. {{PART}}
+    Fla. Stat. tit. {{TITLE}}
+
+    Texas {{CODE}} Code § {{CHAPTER}}.{{SECTION}}
+    Texas {{CODE}} Code § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})
+    Texas {{CODE}} Code, ch. {{CHAPTER}}
+    Texas {{CODE}} Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}
+    Texas {{CODE}} Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}, art. {{ARTICLE}}
+    Texas {{CODE}} Code, tit. {{TITLE}}
+    Texas {{CODE}} Code, tit. {{TITLE}}, subtit. {{SUBTITLE}}
+
+    Va. Code § {{TITLE}}-{{SECTION}}
+    Va. Code, tit. {{TITLE}}
+    Va. Code, tit. {{TITLE}}, chap. {{CHAPTER}}
+    Va. Code, tit. {{TITLE}}, pt. {{PART}}
+
+    Wyo. Stat. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}
+    Wyo. Stat. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}})
+    Wyo. Stat., tit. {{TITLE}}
+    Wyo. Stat., tit. {{TITLE}}, ch. {{CHAPTER}}
+
+    

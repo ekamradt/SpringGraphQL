@@ -8,6 +8,7 @@ import com.pull.law.bluebook.service.BlueSearchRecordService;
 import com.pull.law.bluebook.service.BluebookParseService;
 import com.pull.law.bluebook.service.BluebookSearchService;
 import com.pull.law.bluebook.spreadsheet.FedInvComForm;
+import com.pull.law.sequence.SequenceGenerator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
@@ -43,7 +44,13 @@ public class BluebookApplication {
 
     @PostConstruct
     public void runThis() {
-        fullScraping();
+
+        final SequenceGenerator sequenceGenerator = new SequenceGenerator();
+        for (int i = 0; i < 1000; i++) {
+            final long id = sequenceGenerator.nextId();
+            System.out.println("ID : " + id);
+        }
+        // fullScraping();
         // partialScrapingToOracle();
         // fullScrapingCompareToWellsSpreadsheet();
 
