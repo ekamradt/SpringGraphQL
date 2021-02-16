@@ -1,6 +1,7 @@
 from lxml import etree
 
 from . import db
+from . import errorReport
 
 
 def processSingleFile(dict):
@@ -28,32 +29,14 @@ def processSingleFile(dict):
         if "sourceOfLaw" == tag:
             sourceOfLawWithCitationFormat(child, dict)
             if dict["error"]:
-                showError(dict)
+                errorReport.showError(dict)
                 break
         elif "levels" == tag:
             levelsWithCitationFormat(child, dict)
 
 
-def showErrorHeader():
-    print("source|file|error|docType|rank|levelName|fullFilename")
-
-
 def dictFetch(dict, key):
     return dict[key] if key in dict else ""
-
-
-def showError(dict):
-    fullFilename = dict["fullFilename"]
-    dir_root = dictFetch(dict, "dir_root")
-    dirs = dictFetch(dict, "dirs")
-    inFile = dictFetch(dict, "inFile")
-    source = dictFetch(dict, "source")
-    error = dictFetch(dict, "error")
-    docType = dictFetch(dict, "docType")
-    rank = dictFetch(dict, "rank")
-    levelName = dictFetch(dict, "levelName")
-    source = dictFetch(dict, "source")
-    print(source + "|" + inFile + "|" + error + "|" + docType + "|" + rank + "|" + levelName + "|" + fullFilename)
 
 
 # displayName, description, identification,, issuingAuthority, rootUri
@@ -116,8 +99,10 @@ def searchLawTypeFromDocType(dict, docType):
         return
 
     name = jurisData["name"]
-    value = adjustValueForSearch(docType, name)
-    data = db.searchForLawType(value)
+    data = db.searchForLawType(docType)
+    if not data:
+        value = adjustValueForSearch(docType, name)
+        data = db.searchForLawType(value)
 
     if not data:
         matchingValues = jurisData["matching_values"]
@@ -154,27 +139,98 @@ def levelWithCitationFormat(root, dict):
     docType = dict["docType"]
     jurisData = dict["jurisData"]
     abbr = jurisData['abbreviation']
-    name = None
     rank = None
+    name = None
     citationFormat = ""
     for child in root:
         tag = child.tag
         if "name" == tag:
             name = child.text
+            dict["levelName"] = name
         elif "rank" == tag:
             rank = child.text
+            dict["rank"] = rank
         elif "citationFormat" == tag:
             citationFormat = child.text
+            dict["citationFormat"] = citationFormat
             if abbr not in citationFormat:
                 error = "citation format " + citationFormat + " is missing " + abbr
                 dict["error"] = error
-                showError(dict)
+                errorReport.showError(dict)
+            extraWordInCitationFormat(citationFormat, dict)
 
-    dict["rank"] = rank
-    dict["levelName"] = name
-    dict["citationFormat"] = citationFormat
+
 #    if name != docType:
 #        print("  " + name.ljust(20) + rank.ljust(3) + citationFormat)
+
+def extraWordInCitationFormat(citationFormat, dict):
+    justWords = stripAllButWord(citationFormat, dict)
+    if len(justWords) > 0:
+        jurisData = dict["jurisData"]
+        lawTypeData = dict["lawTypeData"]
+        abbr = jurisData["abbreviation"]
+        bluebook = lawTypeData["bluebook_value"]
+        dict["error"] = "Bad word '%s' for citation '%s'  Juris:'%s'  LawType:'%s'" % (
+            justWords, citationFormat, abbr, bluebook)
+        errorReport.showError(dict)
+    else:
+        dict["error"] = None
+
+
+def stripAllButWord(citationFormat, dict):
+    startCount = 0
+    endCount = 0
+    error = None
+    returnString = ""
+
+    for a in citationFormat:
+        if a == "{":
+            if startCount == 2 and endCount == 2:
+                startCount = 0
+                endCount = 0
+            startCount += 1
+            if startCount > 2:
+                error = "More than 2 start brackets : '" + citationFormat + "'"
+        elif a == "}":
+            endCount += 1
+            if startCount > 2:
+                error = "More than 2 end brackets : '" + citationFormat + "'"
+        else:
+            if startCount > 0 and endCount == 0:
+                continue
+
+            startCount = 0
+            endCount = 0
+            returnString += a
+
+    removeAry = ["subart.", "subpt.", "subtit.", "subch.", "agency", "tit.", ",", " ch.", "§", "()", "pt.", "art.",
+                 'div.', "-", "vol.", "sec."]
+    for remove in removeAry:
+        returnString = returnString.replace(remove, "")
+
+    returnString = returnString.replace("  ", " ")
+
+    jurisData = dict["jurisData"]
+    lawTypeData = dict["lawTypeData"]
+
+    abbr = jurisData["abbreviation"]
+    returnString = returnString.replace(abbr, "")
+
+    bluebook = lawTypeData["bluebook_value"]
+    returnString = returnString.replace(bluebook, "")
+
+    returnString = returnString.strip()
+    while ".." in returnString:
+        returnString = returnString.replace("..", ".")
+
+    returnString = returnString.replace('"', '')
+    removeAry = [".", ":", "r."]
+    for word in removeAry:
+        if returnString == word:
+            returnString = ""
+
+    returnString = returnString.strip()
+    return returnString
 
 # #######################################
 # Error:
