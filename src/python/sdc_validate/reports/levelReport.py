@@ -94,14 +94,18 @@ def searchJurisdictionFromDocType(dict, docType):
 def searchLawTypeFromDocType(dict, docType):
     # Search for jurisdiction match
     data = None
+    if docType == "FFIEC_IT_HANDBOOK":
+        t = 44
     jurisData = dict["jurisData"]
     if not jurisData:
         return
 
-    name = jurisData["name"]
-    data = db.searchForLawType(docType)
+    jurisName = jurisData["name"]
+    docName = docType.replace("1", "")
+    docName = docName.replace("2", "")
+    data = db.searchForLawType(docName)
     if not data:
-        value = adjustValueForSearch(docType, name)
+        value = adjustValueForSearch(docType, jurisName)
         data = db.searchForLawType(value)
 
     if not data:
@@ -110,7 +114,7 @@ def searchLawTypeFromDocType(dict, docType):
         for part in parts:
             if len(part) > 0:
                 value = part.replace(" ", "_")
-                value = adjustValueForSearch(docType, value)
+                value = adjustValueForSearch(docName, value)
                 data = db.searchForLawType(value)
                 if data:
                     break
@@ -158,6 +162,39 @@ def levelWithCitationFormat(root, dict):
                 dict["error"] = error
                 errorReport.showError(dict)
             extraWordInCitationFormat(citationFormat, dict)
+        elif "levelIdentifier" == tag:
+            levelIdentifier(child, dict)
+
+
+def levelIdentifier(root, dict):
+    content = getOriginalLine(root)
+    lines = content.split("\n")
+    exampleCount = - 0
+    for line in lines:
+        if "<example" in line:
+            exampleCount += 1
+            if exampleCount > 1:
+                break
+        else:
+            exampleCount = 0
+
+    if exampleCount > 1:
+        dict["error"] = "More than one example -- do we need to adjust this levelIdentifier group?"
+        errMsg = errorReport.getNamedErrorString(dict, "~")
+        msgPrefix = "ExEx:"
+        print(msgPrefix)
+        print(msgPrefix)
+        print(msgPrefix + errMsg)
+        for line in lines:
+            print(msgPrefix + line)
+
+
+def getOriginalLine(child):
+    originalLine = str(etree.tostring(child, pretty_print=True), 'UTF-8')
+    originalLine = originalLine.replace("\\n", "")
+    originalLine = originalLine.replace("\\", "")
+    originalLine = originalLine.strip()
+    return originalLine
 
 
 #    if name != docType:
@@ -203,28 +240,31 @@ def stripAllButWord(citationFormat, dict):
             endCount = 0
             returnString += a
 
-    removeAry = ["subart.", "subpt.", "subtit.", "subch.", "agency", "tit.", ",", " ch.", "§", "()", "pt.", "art.",
-                 'div.', "-", "vol.", "sec."]
+    removeAry = [" subdiv. ", " subart. ", " subpt. ", " subtit. ", " subch. ", " agency ", " dept. ", " tit. ", ",",
+                 " ch. ", "§", "()", " pt. ", " art. ", ' div. ', "-", " vol. ", " sec. ", " sub. ", " No. "]
     for remove in removeAry:
-        returnString = returnString.replace(remove, "")
+        returnString = returnString.replace(remove, " ")
 
     returnString = returnString.replace("  ", " ")
 
     jurisData = dict["jurisData"]
     lawTypeData = dict["lawTypeData"]
 
-    abbr = jurisData["abbreviation"]
-    returnString = returnString.replace(abbr, "")
-
     bluebook = lawTypeData["bluebook_value"]
     returnString = returnString.replace(bluebook, "")
+
+    abbr = jurisData["abbreviation"]
+    returnString = returnString.replace(abbr, "")
 
     returnString = returnString.strip()
     while ".." in returnString:
         returnString = returnString.replace("..", ".")
+    while "::" in returnString:
+        returnString = returnString.replace("::", ":")
 
     returnString = returnString.replace('"', '')
-    removeAry = [".", ":", "r."]
+    returnString = returnString.strip()
+    removeAry = [".", ":", "r.", ". .", "/"]
     for word in removeAry:
         if returnString == word:
             returnString = ""

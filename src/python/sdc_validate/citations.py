@@ -1,8 +1,6 @@
 import os
 
-from reports import bracketReport
-from reports import errorReport
-from reports import levelReport
+from src.python.sdc_validate.reports import errorReport, bracketReport, levelReport
 
 directories = ['/home/ekamradt/git/data-innodata-sdc/US', '/home/ekamradt/git/data-dcl-sdc/US']
 
