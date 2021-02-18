@@ -1,9 +1,7 @@
 import os
 
-print("*******")
-
-directories = ['/home/ekamradt/tmp/inno/US', '/home/ekamradt/tmp/dcl/US']
-
+directories = ['/home/ekamradt/git/data-innodata-sdc/', '/home/ekamradt/git/data-dcl-sdc/']
+#directories = ['/home/ekamradt/git/data-dcl-sdc/US']
 
 def doStart():
     wrt_file = open('KEYS.info', 'w')
@@ -28,6 +26,10 @@ def doStart():
             key = "CODE_OF_VERMONT_RULES"
         if key == "MUNICIPAL_CODE_OF_CHICAGO":
             key = "CHICAGO_MUNICIPAL_CODE"
+        if key == "OFFICE_OF_THE_REVENUE_COMMISSIONERS_GUIDANCE":
+            key = "REVENUE_COMMISSIONERS_GUIDANCE"
+        if key == "TREATY_ON_THE_FUNCTIONING_OF_THE_EUROPEAN_UNION_(TFEU)":
+            key = "TFEU"
 
         id_map[key] = id
         if "?" in url:
@@ -89,16 +91,25 @@ def doStart():
                             else:
                                 unique_id = url_map[rootUri]
 
-                        sdc_file = open(fullFilename, "w")
-                        for line in lines:
-                            sdc_file.write(line)
-                            if "<rootUri>" in line:
-                                tmp = "    <uniqueId>%s</uniqueId>\n" % (unique_id,)
-                                sdc_file.write(tmp)
-                                
+                        sdc_file = open(fullFilename, "r")
+                        content = sdc_file.read()
                         sdc_file.close()
 
-                        print("%s : %s : %s" % (unique_id, identification.ljust(40), fullFilename,))
+                        if "\<uniqueId\>" not in content:
+                            tmp = "\\\n    <uniqueId>%s<\/uniqueId>" % (unique_id,)
+                            command = "sed --in-place 's/\/rootUri>/\/rootUri>%s/g' \"%s\" " % (tmp, fullFilename,)
+                            print(command)
+                            os.system(command)
+
+                        #sdc_file = open(fullFilename, "r")
+                        #content = sdc_file.read()
+                        #sdc_file.close()
+                        ##content = content.replace("/rootUri>", "/rootUri>" + tmp)
+                        #sdc_file = open(fullFilename, "w")
+                        #sdc_file.write(content)
+                        #sdc_file.close()
+
+                        #print("%s : %s : %s" % (unique_id, identification.ljust(40), fullFilename,))
 
 
 def getKeys(lines):

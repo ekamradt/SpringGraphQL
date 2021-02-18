@@ -94,7 +94,7 @@ def searchJurisdictionFromDocType(dict, docType):
 def searchLawTypeFromDocType(dict, docType):
     # Search for jurisdiction match
     data = None
-    if docType == "FFIEC_IT_HANDBOOK":
+    if docType == "NYSE_RULES":
         t = 44
     jurisData = dict["jurisData"]
     if not jurisData:
@@ -158,7 +158,7 @@ def levelWithCitationFormat(root, dict):
             citationFormat = child.text
             dict["citationFormat"] = citationFormat
             if abbr not in citationFormat:
-                error = "citation format " + citationFormat + " is missing " + abbr
+                error = "citation format " + citationFormat + " is missing '" + abbr + "'"
                 dict["error"] = error
                 errorReport.showError(dict)
             extraWordInCitationFormat(citationFormat, dict)
@@ -230,20 +230,16 @@ def stripAllButWord(citationFormat, dict):
                 error = "More than 2 start brackets : '" + citationFormat + "'"
         elif a == "}":
             endCount += 1
-            if startCount > 2:
+            if endCount > 2:
                 error = "More than 2 end brackets : '" + citationFormat + "'"
         else:
             if startCount > 0 and endCount == 0:
                 continue
 
-            startCount = 0
-            endCount = 0
+            if startCount == 2 and endCount == 2:
+                startCount = 0
+                endCount = 0
             returnString += a
-
-    removeAry = [" subdiv. ", " subart. ", " subpt. ", " subtit. ", " subch. ", " agency ", " dept. ", " tit. ", ",",
-                 " ch. ", "§", "()", " pt. ", " art. ", ' div. ', "-", " vol. ", " sec. ", " sub. ", " No. "]
-    for remove in removeAry:
-        returnString = returnString.replace(remove, " ")
 
     returnString = returnString.replace("  ", " ")
 
@@ -255,6 +251,11 @@ def stripAllButWord(citationFormat, dict):
 
     abbr = jurisData["abbreviation"]
     returnString = returnString.replace(abbr, "")
+
+    removeAry = [" subdiv. ", " subart. ", " subpt. ", " subtit. ", " subch. ", " agency ", " dept. ", " tit. ", ",",
+                 " ch. ", "§", "()", " pt. ", " art. ", ' div. ', "-", " vol. ", " sec. ", " sub. ", " No. ", "(", ")"]
+    for remove in removeAry:
+        returnString = returnString.replace(remove, " ")
 
     returnString = returnString.strip()
     while ".." in returnString:

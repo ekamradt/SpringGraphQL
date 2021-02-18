@@ -3,7 +3,7 @@ import sys
 
 
 def connect():
-    return lite.connect('/src/python/sdc_validate/reports/SDC.db3')
+    return lite.connect('/home/ekamradt/git/SpringGraphQL/src/python/sdc_validate/reports/SDC.db3')
 
 def searchForJurisdiction(jurisdiction):
     value = "%/" + jurisdiction.upper() + "/%"

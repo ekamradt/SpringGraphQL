@@ -917,6 +917,28 @@ ERROR     : 'More than one example -- do we need to adjust this levelIdentifier 
 
 
 SOURCE    : 'INNODATA'
+FILE      : 'sdc-south-carolina-ratifications-and-acts.xml'
+RANK      : '6'
+DOCTYPE   : 'SOUTH_CAROLINA_RATIFICATIONS_AND_ACTS'
+LEVELNAME : 'SECTION'
+FULLFILE  : '/home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml'
+ERROR     : 'More than one example -- do we need to adjust this levelIdentifier group?'
+<levelIdentifier type="Composition">
+        <components>
+          <levelIdentifier type="Constant" value="SECTION " decoration="none" required="true"/>
+          <levelIdentifier type="NumericalSequence" decoration="period" required="true" target="true"/>
+          <levelIdentifier type="Constant" value="." decoration="none" required="false" target="true"/>
+          <levelIdentifier type="AlphabeticalSequence" decoration="none" case="upper" required="false" target="true">
+            <example>A</example>
+          </levelIdentifier>
+          <levelIdentifier type="Constant" value="." decoration="none" required="false"/>
+        </components>
+        <example>SECTION 1.</example>
+        <example>SECTION 2.A.</example>
+      </levelIdentifier>
+
+
+SOURCE    : 'INNODATA'
 FILE      : 'brd-south-carolina-statutes.xml'
 RANK      : '3'
 DOCTYPE   : 'SOUTH_CAROLINA_CODE_OF_STATE_REGULATIONS'
