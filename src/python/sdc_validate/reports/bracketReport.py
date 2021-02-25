@@ -112,22 +112,23 @@ def validateCitationFormatBrackets(citationFormat, dict):
     error = None
     dict["error"] = None
 
-    for a in citationFormat:
-        if a == "{":
-            startCount += 1
-            if startCount > 2:
-                error = "More than 2 start brackets : '" + citationFormat + "'"
-        elif a == "}":
-            endCount += 1
-            if startCount > 2:
-                error = "More than 2 end brackets : '" + citationFormat + "'"
-        else:
-            if startCount == 1:
-                error = "Only one beg bracket '" + citationFormat + "'"
-            if endCount == 1:
-                error = "Only one end bracket '" + citationFormat + "'"
-            startCount = 0
-            endCount = 0
+    if citationFormat is not None:
+        for a in citationFormat:
+            if a == "{":
+                startCount += 1
+                if startCount > 2:
+                    error = "More than 2 start brackets : '" + citationFormat + "'"
+            elif a == "}":
+                endCount += 1
+                if startCount > 2:
+                    error = "More than 2 end brackets : '" + citationFormat + "'"
+            else:
+                if startCount == 1:
+                    error = "Only one beg bracket '" + citationFormat + "'"
+                if endCount == 1:
+                    error = "Only one end bracket '" + citationFormat + "'"
+                startCount = 0
+                endCount = 0
 
     if startCount == 1:
         error = "Only one beg bracket '" + citationFormat + "'"

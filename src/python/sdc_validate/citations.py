@@ -1,6 +1,6 @@
 import os
 
-from reports import errorReport, bracketReport, levelReport
+from reports import errorReport, bracketReport, levelReport, enumReport
 
 directories = ['/home/ekamradt/git/data-innodata-sdc/US', '/home/ekamradt/git/data-dcl-sdc/US']
 
@@ -22,11 +22,9 @@ def start(report_func):
                     fullFilename = str(dir_root) + "/" + str(inFile)
                     dict["inFile"] = inFile
                     dict["fullFilename"] = fullFilename
-                    if not lowerName.endswith("xml") or (
-                            not lowerName.startswith("brd") and not lowerName.startswith("sdc")):
-                        if not lowerName.endswith("pdf"):
-                            ee = 9
-                            # print("Bad File : " + fullFilename)
+                    if not lowerName.endswith("xml") or not lowerName.startswith("sdc"):
+                        ee = 9
+                        # print("Bad File : " + fullFilename)
                     else:
                         # t = 99
                         report_func(dict)
@@ -47,3 +45,6 @@ start(levelReport.processSingleFile)
 
 consoleReportHeader("Bracket Report")
 start(bracketReport.processSingleFile)
+
+consoleReportHeader("Enum Report")
+start(enumReport.processSingleFile)

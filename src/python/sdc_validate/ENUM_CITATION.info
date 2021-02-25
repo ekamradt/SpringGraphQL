@@ -1,0 +1,782 @@
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+Alaska Stat., tit. {{TITLE}}                                 : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+Alaska Stat., tit. {{TITLE}}, ch. {{CHAPTER}}                : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+Alaska Stat. § {{SECTION}}                                   : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+Alaska Stat. § {{SECTION}}({{PARAGRAPH}})                    : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-ahfc-single-family-seller-servicer-memorandums.xml
+AHFC {{MEMORANDUM_NUMBER}}                                   : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-ahfc-single-family-seller-servicer-memorandums.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}                            : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}, pt. {{PART}}              : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}           : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}, § {{CHAPTER}}.{{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+Alaska Admin. Code tit. {{TITLE}}, § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-AK/sdc-alaska-admin-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+Mo. Code Regs. tit. {{TITLE}}                                : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+Mo. Code Regs. tit. {{TITLE}}, div. {{DIVISION}}             : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+Mo. Code Regs. tit. {{TITLE}}, div. {{DIVISION}}, ch. {{CHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+Mo. Code Regs. tit. {{TITLE}}, § {{DIVISION}}-{{CHAPTER}}-{{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+Mo. Code Regs. tit. {{TITLE}}, § {{DIVISION}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-MO/sdc-missouri-code-of-state-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+Haw. Rev. Stat. ch. {{CHAPTER}}                              : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+Haw. Rev. Stat. ch. {{CHAPTER}}, art. {{ARTICLE}}            : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+Haw. Rev. Stat. § {{CHAPTER}}-{{SECTION}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+Haw. Rev. Stat. § {{CHAPTER}}-{{SECTION}}({{SUBSECTION}})    : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+Haw. Code R. tit. {{TITLE}}                                  : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+Haw. Code R. tit. {{TITLE}}, subtit. {{SUBTITLE}}            : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+Haw. Code R. tit. {{TITLE}}, ch. {{CHAPTER}}                 : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+Haw. Code R. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}             : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+Haw. Code R. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-HI/sdc-hawaii-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+Or. Rev. Stat., vol. {{VOLUME}}                              : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+Or. Rev. Stat., tit. {{TITLE}}                               : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+Or. Rev. Stat., ch. {{CHAPTER}}                              : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+Or. Rev. Stat. § {{CHAPTER}}.{{SECTION}}                     : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+Or. Rev. Stat. § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})      : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-administrative-rules.xml
+Or. Admin. R. ch. {{CHAPTER}}                                : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-administrative-rules.xml
+Or. Admin. R. ch. {{CHAPTER}}, div. {{DIVISION}}             : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-administrative-rules.xml
+Or. Admin. R. {{CHAPTER}}-{{DIVISION}}-{{RULE}}              : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-administrative-rules.xml
+Or. Admin. R. {{CHAPTER}}-{{DIVISION}}-{{RULE}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-OR/sdc-oregon-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}                              : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}       : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}, tit. {{TITLE}}              : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}, tit. {{TITLE}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}, tit. {{TITLE}}, art. {{ARTICLE}}, subart. {{SUBARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. ch. {{CHAPTER}}, tit. {{TITLE}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+S.C. Code Regs. {{CHAPTER}}-{{SECTION}}                      : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+{{SESSION}} Sess. (S.C. {{YEAR}})                            : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+{{SESSION}} Sess. (S.C. {{YEAR}})                            : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+{{ACT_NUMBER}}, {{SESSION}} Sess. (S.C. {{YEAR}})            : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+{{ACT_NUMBER}} pt. {{PART}}, {{SESSION}} Sess. (S.C. {{YEAR}}) : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+{{ACT_NUMBER}} § {{SECTION}}, {{SESSION}} Sess. (S.C. {{YEAR}}) : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-ratifications-and-acts.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+S.C. Code tit. {{TITLE}}                                     : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+S.C. Code tit. {{TITLE}}, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+S.C. Code tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}  : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+S.C. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}                : /home/ekamradt/git/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+Mich. Admin. Code, {{DEPARTMENT}}                            : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+Mich. Admin. Code, {{BUREAU}}                                : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+Mich. Admin. Code, tit. {{TITLE}}                            : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+Mich. Admin. Code r. {{RULE}}                                : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+Mich. Admin. Code r. {{RULE}}({{PARAGRAPH}})                 : /home/ekamradt/git/data-innodata-sdc/US/US-MI/sdc-michigan-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+{{AGENCY}} Vt. Code R.                                       : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+{{AGENCY}}-{{CHAPTER}} Vt. Code R.                           : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+{{AGENCY}}-{{CHAPTER}} Vt. Code R., art. {{ARTICLE}}         : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+{{AGENCY}}-{{CHAPTER}} Vt. Code R. § {{SECTION}}             : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+{{AGENCY}}-{{CHAPTER}} Vt. Code R. § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-admin-code-of-vermont.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+Vt. Stat. tit. {{TITLE}}                                     : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+Vt. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+Vt. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+Vt. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}  : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+Vt. Stat. tit. {{TITLE}}, § {{SECTION}}                      : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-VT/sdc-vermont-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+N.M. Code R. {{TITLE}}                                       : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+N.M. Code R. {{TITLE}}.{{CHAPTER}}                           : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+N.M. Code R. {{TITLE}}.{{CHAPTER}}, pt. {{PART}}             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+N.M. Code R. {{TITLE}}.{{CHAPTER}}.{{PART}}.{{SECTION}}      : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+N.M. Code R. {{TITLE}}.{{CHAPTER}}.{{PART}}.{{SECTION}}({{SUBSECTION}}) : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+N.M. Stat., ch. {{CHAPTER}}                                  : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+N.M. Stat., ch. {{CHAPTER}}, art. {{ARTICLE}}                : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+N.M. Stat. {{CHAPTER}}-{{ARTICLE}}-{{SECTION}}               : /home/ekamradt/git/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-alabama-administrative-code.xml
+Ala. Admin. Code r. tit. {{TITLE}}                           : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-alabama-administrative-code.xml
+Ala. Admin. Code r. ch. {{CHAPTER}}                          : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-alabama-administrative-code.xml
+Ala. Admin. Code r. {{CHAPTER}}.{{RULE}}                     : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-alabama-administrative-code.xml
+Ala. Admin. Code r. {{CHAPTER}}.{{RULE}}({{PARAGRAPH}})      : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-alabama-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+Ala. Code, tit. {{TITLE}}                                    : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+Ala. Code, tit. {{TITLE}}, ch. {{CHAPTER}}                   : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+Ala. Code, tit. {{TITLE}}, art. {{ARTICLE}}                  : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+Ala. Code § {{TITLE}}-{{CHAPTER}}{{ARTICLE}}-{{SECTION}}     : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+Ala. Code § {{TITLE}}-{{CHAPTER}}{{ARTICLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-AL/sdc-code-of-alabama.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+Utah Code tit. {{TITLE}}                                     : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+Utah Code tit. {{TITLE}}, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+Utah Code tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}      : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+Utah Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}                : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+Utah Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-administrative-code.xml
+Utah Admin. Code r. tit. {{TITLE}}                           : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-administrative-code.xml
+Utah Admin. Code r. tit. {{TITLE}}, ch. {{CHAPTER}}          : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-administrative-code.xml
+Utah Admin. Code r. {{TITLE}}-{{CHAPTER}}-{{RULE}}           : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-administrative-code.xml
+Utah Admin. Code r. {{TITLE}}-{{CHAPTER}}-{{RULE}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-UT/sdc-utah-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+Okla. Admin. Code tit. {{TITLE}}                             : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+Okla. Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}            : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+Okla. Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+Okla. Admin. Code § {{TITLE}}:{{CHAPTER}}-{{SUBCHAPTER}}-{{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+Okla. Admin. Code § {{TITLE}}:{{CHAPTER}}-{{SUBCHAPTER}}-{{SECTION}}{{PARAGRAPH}} : /home/ekamradt/git/data-innodata-sdc/US/US-OK/sdc-oklahoma-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+CME Rule {{RULE_SECTION}}                                    : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+CME Rule {{RULE_SECTION}}.{{SUBSECTION}}                     : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cme-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-notices.xml
+NFA {{NOTICE_NUMBER}}                                        : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-notices.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+Pub. L. No. {{LAW_NUMBER_DATE}}                              : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+{{ACT_TITLE}}, Pub. L. No. {{LAW_NUMBER_DATE}}               : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-gpo-public-laws.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+NASD Rule {{NUMBERED_THOUSANDS}}                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+NASD Rule {{NUMBERED_HUNDREDTHS}}                            : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+NASD Rule {{NUMBERED_TENTHS_ONES}}                           : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nasd-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+FFIEC IT Examination Handbook, "{{BOOKLET_TITLE}}"           : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+FFIEC IT Examination Handbook, "{{BOOKLET_TITLE}}" {{CHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+FFIEC IT Examination Handbook, "{{BOOKLET_TITLE}}" {{CHAPTER}}.{{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+FFIEC IT Examination Handbook, "{{BOOKLET_TITLE}}" {{CHAPTER}}.{{SECTION}}.{{SUBSECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+FFIEC IT Examination Handbook, "{{BOOKLET_TITLE}}" {{CHAPTER}}.{{SECTION}}.{{SUBSECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-ffiec-it-handbook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-sec-final-rules.xml
+SEC Final R. No. {{RELEASE_NUMBER}}                          : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-sec-final-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-fdic-fin-ins-letters.xml
+FDIC, {{LETTER_NUMBER}}                                      : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-fdic-fin-ins-letters.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+NYSE Rule {{RULE}}                                           : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+NYSE Rule {{RULE}}({{PARAGRAPH}}                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+NYSE Rule {{RULE}}({{PARAGRAPH}}({{SUBPARAGRAPH}})           : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+NYSE Rule {{RULE}}.{{SUPPLEMENT}}                            : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nyse-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-notices.xml
+FINRA {{NOTICE_TYPE_NUMBER}}                                 : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-notices.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cftc-staff-letters.xml
+CFTC Staff Letters: {{LETTER_TYPE}}                          : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cftc-staff-letters.xml
+CFTC Staff Letter {{LETTER_NUMBER}} ({{LETTER_TYPE}})        : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-cftc-staff-letters.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rules, tit. {{TITLE}}                                  : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rules, {{SUB_NUMERICAL_BY_THOUSANDTHS}}                : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rules, {{NUMERICAL_BY_H_T_O}}                          : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rules, {{SUB_NUMERICAL_BY_H_T_O}}                      : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rule No. {{RULE}}                                      : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+FINRA Rule No. {{RULE}}, {{INTERP_MATTER}}                   : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-finra-rules.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-sec-cdi.xml
+SEC Compliance & Disclosure Interpretations, "{{DOCUMENT_TITLE}}" : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-sec-cdi.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+U.S.C., tit. {{TITLE}}                                       : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}                       : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}, div. {{DIVISION}}    : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}, div. {{DIVISION}}, subdiv. {{SUBDIVISION}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}, div. {{DIVISION}}, subdiv. {{SUBDIVISION}}, pt. {{PART}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}, div. {{DIVISION}}, subdiv. {{SUBDIVISION}}, pt. {{PART}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., subtit. {{SUBTITLE}}, div. {{DIVISION}}, subdiv. {{SUBDIVISION}}, pt. {{PART}}, subpt. {{SUBPART}}, ch. {{CHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C., ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}     : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}                               : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}({{SUBSECTION}})               : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}({{SUBSECTION}})({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}({{SUBSECTION}})({{PARAGRAPH}})({{SUBPARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}({{SUBSECTION}})({{PARAGRAPH}})({{SUBPARAGRAPH}})({{CLAUSE}}) : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+{{TITLE}} U.S.C. § {{SECTION}}({{SUBSECTION}})({{PARAGRAPH}})({{SUBPARAGRAPH}})({{CLAUSE}})({{SUBCLAUSE}}) : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-us-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+NFA § {{SECTION}}                                            : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+NFA, Bylaw {{BYLAW}}                                         : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+NFA r. {{RULE}}                                              : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+NFA, Notice {{NOTICE_NUMBER}}                                : /home/ekamradt/git/data-innodata-sdc/US/US/sdc-nfa-rulebook.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+N.C. Gen. Stat., ch. {{CHAPTER}}                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+N.C. Gen. Stat., ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}      : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+N.C. Gen. Stat., ch. {{CHAPTER}}, art. {{ARTICLE}}           : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+N.C. Gen. Stat. § {{CHAPTER}}-{{SECTION}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+N.C. Gen. Stat. § {{CHAPTER}}-{{SECTION}}({{PARAGRAPH}})     : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+N.C. Admin. Code, tit. {{TITLE}}                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+N.C. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}            : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+{{TITLE}} N.C. Admin. Code {{CHAPTER}}{{SUBCHAPTER}}         : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+{{TITLE}} N.C. Admin. Code {{CHAPTER}}{{SUBCHAPTER}}.{{RULE}} : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+{{TITLE}} N.C. Admin. Code {{CHAPTER}}{{SUBCHAPTER}}.{{RULE}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-register.xml
+{{VOLUME}} N.C. Reg. {{INTERNAL_PAGE}} ({{INTERNAL_BLUEBOOK_FULL_DATE}}) : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-register.xml
+{{VOLUME}} N.C. Reg. {{INTERNAL_PAGE}} ({{INTERNAL_BLUEBOOK_FULL_DATE}}) : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-register.xml
+{{VOLUME}} N.C. Reg. {{INTERNAL_PAGE}} ({{INTERNAL_BLUEBOOK_FULL_DATE}}) : /home/ekamradt/git/data-innodata-sdc/US/US-NC/sdc-north-carolina-register.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+{{TITLE}} Miss. Code                                         : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+{{TITLE}} Miss. Code, pt. {{PART}}                           : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+{{TITLE}} Miss. Code, pt. {{PART}}, r. {{RULE}}              : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+{{TITLE}} Miss. Code, pt. {{PART}}, r. {{RULE}}{{PARAGRAPH}} : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}                                    : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}, ch. {{CHAPTER}}                   : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}, subart. {{SUBARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}     : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+Miss. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}               : /home/ekamradt/git/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}                   : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, subtit. {{SUBTITLE}} : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, ch. {{CHAPTER}}  : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, pt. {{PART}}     : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, § {{PART}}.{{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, § {{PART}}.{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{SUBJECT}}                                        : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{SUBJECT}}, div. {{DIVISION}}                     : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{SUBJECT}}, tit. {{TITLE}}                        : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{SUBJECT}}, tit. {{TITLE}}, subtit. {{SUBTITLE}}  : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{SUBJECT}} § {{TITLE}}-{{SECTION}}                : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+Md. Code, {{ARTICLE}} § {{SECTION}}({{PARAGRAPH}})           : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+Md. Code sub. {{SUBJECT}}                                    : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+Md. Code sub. {{SUBJECT}}, tit. {{TITLE}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+Md. Code sub. {{SUBJECT}}, tit. {{TITLE}}, subtit. {{SUBTITLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+Md. Code {{SUBJECT}} § {{TITLE}}-{{SUBTITLE}}-{{SECTION}}    : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+Md. Code {{SUBJECT}} § {{TITLE}}-{{SUBTITLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-MD/sdc-maryland-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-statutes.xml
+Kan. Stat., ch. {{CHAPTER}}                                  : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-statutes.xml
+Kan. Stat., ch. {{CHAPTER}}, art. {{ARTICLE}}                : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-statutes.xml
+Kan. Stat. § {{CHAPTER}}-{{SECTION}}                         : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-statutes.xml
+Kan. Stat. § {{CHAPTER}}-{{SECTION}}({{PARAGRAPH}})          : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-administrative-regulations.xml
+Kan. Admin. Regs., {{AGENCY}}                                : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-administrative-regulations.xml
+Kan. Admin. Regs., {{AGENCY}}, art. {{ARTICLE}}              : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-administrative-regulations.xml
+Kan. Admin. Regs. § {{AGENCY}}-{{ARTICLE}}-{{SECTION}}       : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-administrative-regulations.xml
+Kan. Admin. Regs. § {{AGENCY}}-{{ARTICLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-KS/sdc-kansas-administrative-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}                                     : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, subtit. {{SUBTITLE}}               : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, subtit. {{SUBTITLE}}, pt. {{PART}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, subtit. {{SUBTITLE}}, pt. {{PART}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}, pt. {{PART_IN_SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, § {{CHAPTER}}{{SECTION}}           : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+Del. Code tit. {{TITLE}}, § {{CHAPTER}}{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-DE/SDC-delaware-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}} Del. Admin. Code                                   : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}}-{{DIVISION}} Del. Admin. Code                      : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}}-{{DIVISION}}-{{PART}} Del. Admin. Code             : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}}-{{DIVISION}}-{{PART}} Del. Admin. Code § {{SECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}}-{{DIVISION}}-{{PART}} Del. Admin. Code § {{SECTION}}.{{SUBSECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+{{TITLE}}-{{DIVISION}}-{{PART}} Del. Admin. Code § {{SECTION}}.{{SUBSECTION}}.{{SUBSUBSECTION}} : /home/ekamradt/git/data-innodata-sdc/US/US-DE/sdc-delaware-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat.                                    : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. pt. {{PART}}                       : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. pt. {{PART}}, subpt. {{SUBPART}}   : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. div. {{DIVISION}}                  : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. art. {{ARTICLE}}                   : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. ch. {{CHAPTER}}                    : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+{{TITLE}} Pa. Cons. Stat. § {{SECTION}}                      : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+Pa. Code, tit. {{TITLE}}                                     : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, pt. {{PART}}                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, pt. {{PART}}, subpt. {{SUBPART}}         : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, pt. {{PART}}, subpt. {{SUBPART}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, ch. {{CHAPTER}}                          : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}   : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code, ch. {{CHAPTER}}, pt. {{PART}}            : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code § {{SECTION}}                             : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+{{TITLE}} Pa. Code § {{CHAPTER}}.{{SECTION}}({{SUBSECTION}}) : /home/ekamradt/git/data-innodata-sdc/US/US-PA/sdc-penn-admin-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+Ga. Code tit. {{TITLE}}                                      : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+Ga. Code tit. {{TITLE}}, ch. {{CHAPTER}}                     : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+Ga. Code, tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}  : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+Ga. Code, tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}      : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+Ga. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}                 : /home/ekamradt/git/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}                               : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, § {{SECTION}}                : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/CA/sdc-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}                               : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, pt. {{PART}}                 : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, pt. {{PART}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, § {{SECTION}}                : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+La. Admin. Code tit. {{TITLE}}, § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-administrative-code.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+La. Rev. Stat., tit. {{TITLE}}                               : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+La. Rev. Stat. § {{TITLE}}:{{SECTION}}                       : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+La. Rev. Stat. § {{TITLE}}:{{SECTION}}({{PARAGRAPH}})        : /home/ekamradt/git/data-innodata-sdc/US/US-LA/sdc-louisiana-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+Conn. Gen. Stat. tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+Conn. Gen. Stat. § {{TITLE}}-{{SECTION}}                     : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+Conn. Agencies Regs. tit. {{TITLE}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+Conn. Agencies Regs. subtit. {{TITLE}}-{{SUBTITLE}}          : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+Conn. Agencies Regs. § {{TITLE}}-{{SUBTITLE}}-{{SECTION}}    : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+Conn. Agencies Regs. § {{TITLE}}-{{SUBTITLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+Fla. Stat. tit. {{TITLE}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+Fla. Stat. ch. {{CHAPTER}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+Fla. Stat. ch. {{CHAPTER}}, pt. {{PART}}                     : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+Fla. Stat. § {{CHAPTER}}.{{SECTION}}                         : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+Fla. Stat. § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})          : /home/ekamradt/git/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-ucc.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-ucc.xml
+Neb. Rev. Stat. - UCC § {{SECTION}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-ucc.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+Neb. Rev. Stat., ch. {{CHAPTER}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+Neb. Rev. Stat. § {{CHAPTER}}-{{SECTION}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+Neb. Rev. Stat. § {{CHAPTER}}-{{SECTION}}{{ALPHA}}           : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+Neb. Rev. Stat. § {{CHAPTER}}-{{SECTION}}{{ALPHA}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+Tex. Admin. Code, tit. {{TITLE}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+Tex. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}            : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+{{TITLE}} Tex. Admin. Code, ch. {{CHAPTER}}, div. {{DIVISION}} : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+{{TITLE}} Tex. Admin. Code § {{CHAPTER}}.{{SECTION}}         : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code                                           : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code, tit. {{TITLE}}                           : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code, tit. {{TITLE}}, subtit. {{SUBTITLE}}     : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code, ch. {{CHAPTER}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}   : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code § {{CHAPTER}}.{{SECTION}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+Tex. {{CODE}} Code § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})  : /home/ekamradt/git/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+Minn. Stat. tit. {{TITLE}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+Minn. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+Minn. Stat. § {{CHAPTER}}.{{SECTION}}                        : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+Minn. Stat. § {{CHAPTER}}.{{SECTION}} subdiv. {{SUBDIVISION}} : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+Minn. R., {{AGENCY_NAME}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+Minn. R., {{AGENCY_NAME}}, ch. {{CHAPTER}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+Minn. R. {{CHAPTER}}.{{PART}}                                : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+Minn. R. {{CHAPTER}}.{{PART}}({{SUBPART}})                   : /home/ekamradt/git/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}}                                                : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} div. {{DIVISION}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} div. {{DIVISION}} pt. {{PART}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} div. {{DIVISION}} pt. {{PART}} tit. {{TITLE}}  : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} tit. {{TITLE}} ch. {{CHAPTER}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} div. {{DIVSION}} pt. {{PART}} tit. {{TITLE}} ch. {{CHAPTER}} art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} § {{SECTION}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+Cal. {{CODE}} § {{SECTION}}{{LOWERCASE_LETTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative2.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}}                                                : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} pt. {{PART}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} pt. {{PART}} tit. {{TITLE}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} pt. {{PART}} tit. {{TITLE}} div. {{DIVISION}}  : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} pt. {{PART}} tit. {{TITLE}} ch. {{CHAPTER}}    : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} pt. {{PART}} tit. {{TITLE}} art. {{ARTICLE}}   : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} § {{SECTION}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+Cal. {{CODE}} § {{SECTION}}{{LOWERCASE_LETTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code-alternative.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}}                                                : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} tit. {{TITLE}}                                 : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} div. {{DIVISION}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} div. {{DIVISION}} pt. {{PART}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} div. {{DIVISION}} pt. {{PART}} ch. {{CHAPTER}} : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} div. {{DIVISION}} pt. {{PART}} art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} § {{SECTION}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+Cal. {{CODE}} § {{SECTION}}{{LOWERCASE_LETTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, § {{SECTION}}                : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+Cal. Code Regs. tit. {{TITLE}}, § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-CA/SDC-california-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+Va. Code, tit. {{TITLE}}                                     : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+Va. Code, tit. {{TITLE}}, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+Va. Code, tit. {{TITLE}}, pt. {{PART}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+Va. Code § {{TITLE}}-{{SECTION}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+Va. Admin. Code, tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+{{TITLE}} Va. Admin. Code, agency {{AGENCY}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+{{TITLE}} Va. Admin. Code, agency {{AGENCY}}, ch. {{CHAPTER}} : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+{{TITLE}} Va. Admin. Code, agency {{AGENCY}}, ch. {{CHAPTER}}, pt. {{PART}} : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+{{TITLE}} Va. Admin. Code § {{AGENCY}}-{{CHAPTER}}-{{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+{{TITLE}} Va. Admin. Code § {{AGENCY}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-washington-administrative-code.xml
+Wash. Admin. Code, tit. {{TITLE}}                            : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-washington-administrative-code.xml
+Wash. Admin. Code, ch. {{TITLE}}-{{CHAPTER}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-washington-administrative-code.xml
+Wash. Admin. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}        : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-washington-administrative-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+Wash. Rev. Code, tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+Wash. Rev. Code, ch. {{TITLE}}.{{CHAPTER}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+Wash. Rev. Code, ch. {{TITLE}}.{{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+Wash. Rev. Code § {{TITLE}}.{{CHAPTER}}.{{SECTION}}          : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+Wash. Rev. Code § {{TITLE}}.{{CHAPTER}}.{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+Me. Code R., {{DEPARTMENT}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}} Me. Code R.                                       : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}}-{{CHAPTER}} Me. Code R.                           : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}}-{{CHAPTER}} Me. Code R., art. {{ARTICLE}}         : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}}-{{CHAPTER}} Me. Code R. § {{ROMAN}}               : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}}-{{CHAPTER}} Me. Code R. § {{SECTION}}             : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+{{AGENCY}}-{{CHAPTER}} Me. Code R. § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+Me. Rev. Stat. tit. {{TITLE}}                                : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+Me. Rev. Stat. tit. {{TITLE}} § {{SECTION}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+Me. Rev. Stat. tit. {{TITLE}} § {{SECTION}}({{PARAGRAPH}})   : /home/ekamradt/git/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+S.D. Codified Laws tit. {{TITLE}}                            : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+S.D. Codified Laws tit. {{TITLE}}, ch. {{CHAPTER}}           : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+S.D. Codified Laws § {{TITLE}}-{{CHAPTER}}-{{SECTION}}       : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+S.D. Codified Laws § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+S.D. Admin. R. {{ARTICLE}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+S.D. Admin. R. {{ARTICLE}}:{{CHAPTER}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+S.D. Admin. R. {{ARTICLE}}:{{CHAPTER}}:{{SECTION}}           : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+S.D. Admin. R. {{ARTICLE}}:{{CHAPTER}}:{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-fed-res-sr-letters.xml
+SR {{LETTER}}                                                : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-fed-res-sr-letters.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-cfpb-guidance.xml
+CFPB Supervisory Guidance: {{MAIN_TITLE}}                    : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-cfpb-guidance.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-basel-committee-coordination-bulletins.xml
+BCC Bulletin {{BULLETIN}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-basel-committee-coordination-bulletins.xml
+BCC Bulletin {{BULLETIN}}, "{{SUBJECT}}"                     : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-basel-committee-coordination-bulletins.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-internal-revenue-bulletins.xml
+IRS Bulletin {{BULLETIN}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-internal-revenue-bulletins.xml
+IRS Bulletin {{BULLETIN}} {{PART}}                           : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-internal-revenue-bulletins.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}"                 : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}" {{SECTION}}     : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}" {{SECTION}}{{SUBSECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}" {{SECTION}}{{SUBSECTION}}{{PARAGRAPH}} : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}" {{SECTION}}{{SUBSECTION}}{{PARAGRAPH}}{{SUBPARAGRAPH}} : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+Federal Reserve BHC Manual, "{{MAIN_TITLE}}" {{SECTION}}{{SUBSECTION}}{{PARAGRAPH}}{{SUBPARAGRAPH}}{{CLAUSE}} : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-bhc-supervision-manual.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-US-OCC-BULLETINS.xml
+OCC Bulletin: "{{BULLETIN}}"                                 : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-US-OCC-BULLETINS.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-US-OCC-BULLETINS.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. {{PART}}.{{SECTION}}                        : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. {{PART}}, App. {{APPENDIX}}                 : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. {{PART}}, Supp. No. {{SUPPLEMENT}}          : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. {{PART}}.{{SECTION}}({{ALPHA}})             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. {{PART}}.{{SECTION}}({{ALPHA}})({{NUMERIC}}) : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+{{TITLE}} C.F.R. § {{PART}}.{{SECTION}}({{ALPHA}})({{NUMERIC}})({{ROMAN}}) : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-code-of-federal-regulation.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-occ-advisory-letters.xml
+AL {{LETTER}}                                                : /home/ekamradt/git/data-dcl-sdc/US/US/sdc-occ-advisory-letters.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+R.I. Code R., tit. {{TITLE}}                                 : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+R.I. Code R., tit. {{TITLE}}, ch. {{CHAPTER}}                : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+{{TITLE}}-{{CHAPTER}}-{{SUBCHAPTER}} R.I. Code R.            : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+{{TITLE}}-{{CHAPTER}}-{{SUBCHAPTER}} R.I. Code R., pt. {{PART}} : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+{{TITLE}}-{{CHAPTER}}-{{SUBCHAPTER}} R.I. Code R. § {{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+{{TITLE}}-{{CHAPTER}}-{{SUBCHAPTER}} R.I. Code R. § {{SECTION}}{{SUBSECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+{{TITLE}}-{{CHAPTER}}-{{SUBCHAPTER}} R.I. Code R. § {{SECTION}}{{SUBSECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-rhode-island-code-of-regulations1.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-ri-statutes.xml
+R.I. Gen. Laws, tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-ri-statutes.xml
+{{TITLE}} R.I. Gen. Laws, ch. {{CHAPTER}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-ri-statutes.xml
+{{TITLE}} R.I. Gen. Laws § {{SECTION}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-RI/sdc-ri-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colo-admin-code.xml
+Colo. Code Regs., {{DEPARTMENT}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colo-admin-code.xml
+Colo. Code Regs., div. {{DIVISION}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colo-admin-code.xml
+Colo. Code Regs. § {{DIVISION}}-{{CCR}}                      : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colo-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+Colo. Rev. Stat. tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+Colo. Rev. Stat. tit. {{TITLE}}, art. {{ARTICLE}}            : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+Colo. Rev. Stat. § {{TITLE}}-{{ARTICLE}}-{{SECTION}}         : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+Colo. Rev. Stat. § {{TITLE}}-{{ARTICLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-CO/sdc-colorado-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+Ariz. Rev. Stat. tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+Ariz. Rev. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}             : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+Ariz. Rev. Stat. § {{TITLE}}-{{SECTION}}                     : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+Ariz. Admin. Code, tit. {{TITLE}}                            : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+Ariz. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}           : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+Ariz. Admin. Code, tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+Ariz. Admin. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}        : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+Ariz. Admin. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+Mont. Admin. R. {{DEPARTMENT}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+Mont. Admin. R. {{DEPARTMENT}}.{{CHAPTER}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+Mont. Admin. R. {{DEPARTMENT}}.{{CHAPTER}}.{{RULE}}          : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+Mont. Admin. R. {{DEPARTMENT}}.{{CHAPTER}}.{{RULE}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code tit. {{TITLE}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code tit. {{TITLE}}, ch. {{CHAPTER}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}     : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code tit. {{TITLE}}, ch. {{CHAPTER}}, pt. {{PART}}, r. {{RULE}} : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}               : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+Mont. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NJ/sdc-new-jersey-revised-statutes.xml
+N.J. Rev. Stat., tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-NJ/sdc-new-jersey-revised-statutes.xml
+N.J. Rev. Stat., tit. {{TITLE}}, ch. {{CHAPTER}}             : /home/ekamradt/git/data-dcl-sdc/US/US-NJ/sdc-new-jersey-revised-statutes.xml
+N.J. Rev. Stat. § {{TITLE}}:{{SECTION}}                      : /home/ekamradt/git/data-dcl-sdc/US/US-NJ/sdc-new-jersey-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-revised-statutes.xml
+N.H. Rev. Stat. tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-revised-statutes.xml
+N.H. Rev. Stat. § {{CHAPTER}}:                               : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-revised-statutes.xml
+N.H. Rev. Stat. § {{CHAPTER}}:{{SECTION}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+N.H. Code Admin. R. {{AGENCYDIVISION}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+N.H. Code Admin. R. {{AGENCYDIVISION}}{{CHAPTER}}            : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+N.H. Code Admin. R. {{AGENCYDIVISION}}{{PART}}               : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+N.H. Code Admin. R. {{AGENCYDIVISION}}{{SECTION}}            : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+N.H. Code Admin. R. {{AGENCYDIVISION}}{{SECTION}}{{SUBSECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+D.C. Code, tit. {{TITLE}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+D.C. Code, tit. {{TITLE}}, ch. {{CHAPTER}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+D.C. Code § {{TITLE}}-{{SECTION}}                            : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+D.C. Code § {{TITLE}}-{{SECTION}}({{PARAGRAPH}})             : /home/ekamradt/git/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+Ind. Admin. Code tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+{{TITLE}} Ind. Admin. Code art. {{ARTICLE}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+{{TITLE}} Ind. Admin. Code art. {{ARTICLE}}, r. {{RULE}}     : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+{{TITLE}} Ind. Admin. Code {{REGULATION}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+{{TITLE}} Ind. Admin. Code {{REGULATION}}({{PARAGRAPH}})     : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+Ind. Code, tit. {{TITLE}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+Ind. Code, tit. {{TITLE}}, art. {{ARTICLE}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+Ind. Code, tit. {{TITLE}}, art. {{ARTICLE}}, ch. {{CHAPTER}} : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+Ind. Code § {{TITLE}}-{{ARTICLE}}-{{CHAPTER}}-{{SECTION}}    : /home/ekamradt/git/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law                                         : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law, pt. {{PART}}                           : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law, tit. {{TITLE}}                         : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law, art. {{ARTICLE}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law § {{SECTION}}                           : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+N.Y. {{SUBJECT}} Law § {{SECTION}}, {{PARAGRAPH}}            : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, subtit. {{SUBTITLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, ch. {{CHAPTER}}  : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, pt. {{PART}}     : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, § {{PART}}.{{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+N.Y. Comp. Codes R. & Regs. tit. {{TITLE}}, § {{PART}}.{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-admin-code.xml
+Nev. Admin. Code, ch. {{CHAPTER}}                            : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-admin-code.xml
+Nev. Admin. Code § {{CHAPTER}}.{{SECTION}}                   : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} pt. {{PART}} : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. § {{CHAPTER}}.{{SECTION}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+Nev. Rev. Stat. § {{CHAPTER}}.{{SECTION}}, {{PARAGRAPH}}.    : /home/ekamradt/git/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+Tenn. Comp. R. & Regs., dept. {{DEPARTMENT}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+Tenn. Comp. R. & Regs., ch. {{CHAPTER}}                      : /home/ekamradt/git/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+Tenn. Comp. R. & Regs. {{CHAPTER}}-{{RULE}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+Tenn. Comp. R. & Regs. {{CHAPTER}}-{{RULE}}({{PARAGRAPH}})   : /home/ekamradt/git/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+Iowa Admin. Code r., {{AGENCY}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+Iowa Admin. Code r., {{AGENCY}}, ch. {{CHAPTER}}             : /home/ekamradt/git/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+Iowa Admin. Code r. {{SECTION}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code, tit. {{TITLE}}                                    : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code, ch. {{CHAPTER}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}            : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}, div. {{DIVISION}} : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}, div. {{DIVISION}}, pt. {{PART}} : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code § {{CHAPTER}}.{{SECTION}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+Iowa Code § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})           : /home/ekamradt/git/data-dcl-sdc/US/US-IA/SDC-iowa-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+Mass. Gen. Laws pt. {{PART}}                                 : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+Mass. Gen. Laws tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+Mass. Gen. Laws ch. {{CHAPTER}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+Mass. Gen. Laws ch. {{CHAPTER}}, § {{SECTION}}               : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+Mass. Gen. Laws ch. {{CHAPTER}}, § {{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-code-of-regulations.xml
+Mass. Code Regs., tit. {{TITLE}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-code-of-regulations.xml
+{{TITLE}} Mass. Code Regs. {{REGULATION}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-code-of-regulations.xml
+{{TITLE}} Mass. Code Regs. {{SECTION}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-code-of-regulations.xml
+{{TITLE}} Mass. Code Regs. {{SECTION}}({{PARAGRAPH}})        : /home/ekamradt/git/data-dcl-sdc/US/US-MA/sdc-massachusetts-code-of-regulations.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code, ch. {{CHAPTER}}                                 : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code, ch. {{CHAPTER}}, art. {{ARTICLE}}               : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code, ch. {{CHAPTER}}, art. {{ARTICLE}}, pt. {{PART}} : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code, ch. {{CHAPTER}}, art. {{ARTICLE}}, pt. {{PART}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code § {{CHAPTER}}-{{ARTICLE}}-{{SECTION}}            : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+W. Va. Code § {{CHAPTER}}-{{ARTICLE}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-WV/SDC-west-virginia-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat.                                 : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat. {{ACT}}                         : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat. {{ACT}} art. {{ARTICLE}}        : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat. {{ACT}} pt. {{PART}}            : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat. {{ACT}}/{{SECTION}}             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+{{CHAPTER}} Ill. Comp. Stat. {{ACT}}/{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+Cook County, Ill., Code of Ordinances ch. {{CHAPTER}}        : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+Cook County, Ill., Code of Ordinances ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+Cook County, Ill., Code of Ordinances sec. {{SECTION}}       : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-code-of-ordinances-of-cook-county.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+{{MAIN_TITLE}}                                               : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+{{MAIN_TITLE}}, tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+{{MAIN_TITLE}}, tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+{{MAIN_TITLE}}, tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+{{MAIN_TITLE}}, {{SECTION}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-chicago-municipal-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+Ill. Admin. Code tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+Ill. Admin. Code tit. {{TITLE}}, pt. {{PART}}                : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+Ill. Admin. Code tit. {{TITLE}}, pt. {{PART}}, subpt. {{SUBPART}} : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+Ill. Admin. Code tit. {{TITLE}}, § {{PART}}{{SECTION}}       : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+Ill. Admin. Code tit. {{TITLE}}, § {{PART}}{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-IL/sdc-illinois-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+Wyo. Stat., tit. {{TITLE}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+Wyo. Stat., tit. {{TITLE}}, ch. {{CHAPTER}}                  : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+Wyo. Stat. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}               : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+Wyo. Stat. § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+{{AGENCY}} Wyo. Code R.                                      : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+{{AGENCY}}-{{PROGRAM}} Wyo. Code R.                          : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+{{AGENCY}}-{{PROGRAM}} Wyo. Code R., ch. {{CHAPTER}}         : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+{{AGENCY}}-{{PROGRAM}} Wyo. Code R. § {{CHAPTER}}-{{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. tit. {{TITLE}}                                : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. ch. {{CHAPTER}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. ch. {{CHAPTER}}, subch. {{SUBCHAPTER}}        : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. ch. {{CHAPTER}}, subtit. {{SUBTITLE}}         : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. ch. {{CHAPTER}}, art. {{ARTICLE}}             : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. § {{CHAPTER}}.{{SECTION}}                     : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+Ky. Rev. Stat. § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})      : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-admin-regs.xml
+Ky. Admin. Code tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-admin-regs.xml
+{{TITLE}} Ky. Admin. Code ch. {{CHAPTER}}                    : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-admin-regs.xml
+{{TITLE}} Ky. Admin. Code {{CHAPTER}}.{{REGULATION}}         : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-admin-regs.xml
+{{TITLE}} Ky. Admin. Code {{CHAPTER}}.{{REGULATION}}, § {{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-KY/sdc-kentucky-admin-regs.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+Ohio Rev. Code, tit. {{TITLE}}                               : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+Ohio Rev. Code, tit. {{TITLE}}, ch. {{CHAPTER}}              : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+Ohio Rev. Code § {{CHAPTER}}.{{SECTION}}                     : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+Ohio Rev. Code § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})      : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+Ohio Admin. Code {{AGENCY}}                                  : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+Ohio Admin. Code, ch. {{AGENCY}}-{{CHAPTER}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+Ohio Admin. Code {{AGENCY}}-{{CHAPTER}}-{{RULE}}             : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+Ohio Admin. Code {{AGENCY}}-{{CHAPTER}}-{{RULE}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+Wis. Stat., {{CATEGORY}}                                     : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+Wis. Stat. ch. {{CHAPTER}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+Wis. Stat. § {{CHAPTER}}.{{SECTION}}                         : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+Wis. Stat. § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}})          : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+Wis. Admin. Code {{AGENCY}}, ch. {{CHAPTER}}                 : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+Wis. Admin. Code {{AGENCY}}, ch. {{CHAPTER}}, subch. {{SUBCHAPTER}} : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+Wis. Admin. Code {{AGENCY}} § {{CHAPTER}}.{{SECTION}}        : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+Wis. Admin. Code {{AGENCY}} § {{CHAPTER}}.{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+Idaho Code, tit. {{TITLE}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+Idaho Code {{TITLE}}-{{CHAPTER}}                             : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+Idaho Code § {{TITLE}}-{{SECTION}}                           : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+Idaho Code § {{TITLE}}-{{SECTION}}({{SUBSECTION}})           : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-administrative-code.xml
+Idaho Admin. Code r. tit. {{IDAPA}}                          : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-administrative-code.xml
+Idaho Admin. Code r. sec. {{SECTION}}                        : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-administrative-code.xml
+Idaho Admin. Code r. {{SECTION}}.{{SUBSECTION}}              : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-administrative-code.xml
+Idaho Admin. Code r. {{SUBSECTION}}.{{PARAGRAPH}}            : /home/ekamradt/git/data-dcl-sdc/US/US-ID/sdc-idaho-administrative-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+N.D. Admin. Code {{TITLE}}                                   : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+N.D. Admin. Code {{TITLE}}-{{ARTICLE}}                       : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+N.D. Admin. Code {{TITLE}}-{{ARTICLE}}-{{CHAPTER}}           : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+N.D. Admin. Code {{TITLE}}-{{ARTICLE}}-{{CHAPTER}}-{{SECTION}} : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+N.D. Admin. Code {{TITLE}}-{{ARTICLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+                                                             : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+N.D. Cent. Code, tit. {{TITLE}}                              : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+N.D. Cent. Code, tit. {{TITLE}}, ch. {{CHAPTER}}             : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+N.D. Cent. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}          : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+N.D. Cent. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}, art. {{ARTICLE}} : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+N.D. Cent. Code § {{TITLE}}-{{CHAPTER}}-{{SECTION}}({{PARAGRAPH}}) : /home/ekamradt/git/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml

@@ -1,7 +1,6 @@
 from lxml import etree
 
 from . import db
-from . import errorReport
 
 
 def processSingleFile(dict):
@@ -29,7 +28,7 @@ def processSingleFile(dict):
         if "sourceOfLaw" == tag:
             sourceOfLawWithCitationFormat(child, dict)
             if dict["error"]:
-                errorReport.showError(dict)
+                ############ errorReport.showError(dict)
                 break
         elif "levels" == tag:
             levelsWithCitationFormat(child, dict)
@@ -145,7 +144,7 @@ def levelWithCitationFormat(root, dict):
     abbr = jurisData['abbreviation']
     rank = None
     name = None
-    citationFormatText = ""
+    citationFormat = ""
     for child in root:
         tag = child.tag
         if "name" == tag:
@@ -155,14 +154,13 @@ def levelWithCitationFormat(root, dict):
             rank = child.text
             dict["rank"] = rank
         elif "citationFormat" == tag:
-            citationFormatText = child.text
-            dict["citationFormat"] = citationFormatText
-            if citationFormatText is not None:
-                if abbr not in citationFormatText:
-                    error = "citation format " + citationFormatText + " is missing '" + abbr + "'"
-                    dict["error"] = error
-                    errorReport.showError(dict)
-                extraWordInCitationFormat(citationFormatText, dict)
+            citationFormat = child.text
+            dict["citationFormat"] = citationFormat
+            if abbr not in citationFormat:
+                error = "citation format " + citationFormat + " is missing '" + abbr + "'"
+                dict["error"] = error
+                ###################errorReport.showError(dict)
+            extraWordInCitationFormat(citationFormat, dict)
         elif "levelIdentifier" == tag:
             levelIdentifier(child, dict)
 
@@ -182,12 +180,12 @@ def levelIdentifier(root, dict):
     if exampleCount > 1:
         dict["error"] = "More than one example -- do we need to adjust this levelIdentifier group?"
         cit = dict["citationFormat"] if "citationFormat" in dict else ""
-        errMsg = errorReport.getNamedErrorString(dict, "~")
+        errMsg = "" ############errorReport.getNamedErrorString(dict, "~")
         msgPrefix = "ExEx:"
         print(msgPrefix)
         print(msgPrefix)
         print(msgPrefix + errMsg)
-        print(msgPrefix + "Citation: '" + (cit if cit is not None else "") + "'")
+        print(msgPrefix + "Citation: '" + cit + "'")
         for line in lines:
             print(msgPrefix + line)
 

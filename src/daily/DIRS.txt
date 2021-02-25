@@ -1,0 +1,174 @@
+package_2021-02-19_01-2a76ae70-52e7-4012-b676-97c068c7ed48:
+total 60
+drwxr-xr-x  3 root root  4096 Feb 19 01:51 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  8 root root  4096 Feb 19 01:51 ALASKA_STATUTES
+-rw-r--r--  1 root root 39831 Feb 19 01:51 manifest.yaml
+
+package_2021-02-19_01-8be745a8-540c-4b95-b23b-4a134b0fcc45:
+total 64
+drwxr-xr-x  3 root root  4096 Feb 19 01:58 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 44225 Feb 19 01:58 manifest.yaml
+drwxr-xr-x 11 root root  4096 Feb 19 01:58 MISSISSIPPI_CODE
+
+package_2021-02-19_02-07e3e891-4bfc-4250-89ed-093722a90372:
+total 48
+drwxr-xr-x  3 root root  4096 Feb 19 02:13 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  4 root root  4096 Feb 19 02:13 DELAWARE_CODE
+-rw-r--r--  1 root root 27186 Feb 19 02:13 manifest.yaml
+
+package_2021-02-19_02-1d890af3-5996-4f42-aeb3-d0b00e48bee5:
+total 72
+drwxr-xr-x  3 root root  4096 Feb 19 02:46 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 51302 Feb 19 02:46 manifest.yaml
+drwxr-xr-x  4 root root  4096 Feb 19 02:45 WISCONSIN_STATUTES
+
+package_2021-02-19_02-1e78537f-cc5d-4eb7-8098-d1e6c71eaa86:
+total 60
+drwxr-xr-x  3 root root  4096 Feb 19 02:02 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  8 root root  4096 Feb 19 02:02 CODE_OF_ALABAMA
+-rw-r--r--  1 root root 40432 Feb 19 02:02 manifest.yaml
+
+package_2021-02-19_02-25cbbf89-132c-47e0-862e-7339eff07336:
+total 24
+drwxr-xr-x  3 root root  4096 Feb 19 02:31 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root   958 Feb 19 02:31 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 02:31 NEW_MEXICO_STATUTES
+
+package_2021-02-19_02-33da9a0f-5212-44dd-bb11-ba6f8e0cb805:
+total 80
+drwxr-xr-x  3 root root  4096 Feb 19 02:24 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  3 root root  4096 Feb 19 02:23 CONNECTICUT_STATUTES
+-rw-r--r--  1 root root 60682 Feb 19 02:24 manifest.yaml
+
+package_2021-02-19_02-39e18a97-1175-4034-9df7-2ad06d5cd145:
+total 60
+drwxr-xr-x  3 root root  4096 Feb 19 02:01 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 38164 Feb 19 02:01 manifest.yaml
+drwxr-xr-x  4 root root  4096 Feb 19 02:01 WYOMING_STATUTES
+
+package_2021-02-19_02-56025781-bbd9-4517-ad49-a59267a0f7e9:
+total 32
+drwxr-xr-x  3 root root  4096 Feb 19 02:02 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 12253 Feb 19 02:02 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 02:02 UTAH_CODE
+
+package_2021-02-19_02-593c90b4-8e09-4667-b666-86bb423b8190:
+total 64
+drwxr-xr-x  3 root root  4096 Feb 19 02:13 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  5 root root  4096 Feb 19 02:13 ARIZONA_STATUTES
+-rw-r--r--  1 root root 41724 Feb 19 02:13 manifest.yaml
+
+package_2021-02-19_02-67603863-77f8-41f9-a50e-aa7fae872302:
+total 36
+drwxr-xr-x  3 root root  4096 Feb 19 02:58 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  3 root root  4096 Feb 19 02:58 IOWA_CODE
+-rw-r--r--  1 root root 13865 Feb 19 02:58 manifest.yaml
+
+package_2021-02-19_02-78d1e80b-55a9-4bb2-a799-627579847b21:
+total 76
+drwxr-xr-x  3 root root  4096 Feb 19 02:03 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 55712 Feb 19 02:03 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 02:03 NEW_JERSEY_STATUTES
+
+package_2021-02-19_02-8aa84b52-2738-4d7b-998b-29bb1933a5d0:
+total 24
+drwxr-xr-x  3 root root  4096 Feb 19 02:05 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root   929 Feb 19 02:05 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 02:05 MARYLAND_STATUTES
+
+package_2021-02-19_02-8dd78d8c-5d63-47e8-9fd3-718e746df00a:
+total 24
+drwxr-xr-x  3 root root  4096 Feb 19 02:01 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root   997 Feb 19 02:01 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 02:01 NEBRASKA_UNIFORM_COMMERCIAL_CODE
+
+package_2021-02-19_02-d99d2b28-f9b8-42f9-a882-fc0a34d74099:
+total 60
+drwxr-xr-x  3 root root  4096 Feb 19 02:05 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  3 root root  4096 Feb 19 02:05 COLORADO_STATUTES
+-rw-r--r--  1 root root 40579 Feb 19 02:05 manifest.yaml
+
+package_2021-02-19_03-6cf14053-d952-4a85-85a0-958ad8498b0b:
+total 44
+drwxr-xr-x  3 root root  4096 Feb 19 03:05 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 23931 Feb 19 03:05 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 03:05 MINNESOTA_STATUTES
+
+package_2021-02-19_04-a399e61b-f228-4ccb-9d56-305f40c96ed8:
+total 48
+drwxr-xr-x  3 root root  4096 Feb 19 04:09 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x  5 root root  4096 Feb 19 04:09 CALIFORNIA_STATUTORY_CODE
+-rw-r--r--  1 root root 27633 Feb 19 04:09 manifest.yaml
+
+package_2021-02-19_04-a46a039f-82dc-4c17-bec0-28c6ca5eb3f1:
+total 2296
+drwxr-xr-x  3 root root    4096 Feb 19 05:12 .
+drwxr-xr-x 27 root root   12288 Feb 19 06:13 ..
+drwxr-xr-x  3 root root    4096 Feb 19 04:47 ILLINOIS_STATUTES
+-rw-r--r--  1 root root 2326791 Feb 19 05:12 manifest.yaml
+
+package_2021-02-19_05-3516d167-ec15-4990-aba3-e4a4a2a46da9:
+total 24
+drwxr-xr-x  3 root root  4096 Feb 19 05:59 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root   922 Feb 19 05:59 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 05:59 TEXAS_STATUTES
+
+package_2021-02-19_05-bb2a065c-f7b5-4a7e-985f-b155791587c9:
+total 28
+drwxr-xr-x  3 root root  4096 Feb 19 05:30 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root  7437 Feb 19 05:30 manifest.yaml
+drwxr-xr-x  3 root root  4096 Feb 19 05:30 OIREACHTAS_ACT
+
+package_2021-02-19_05-c1e9c760-c44b-49ed-9f8a-abd0205aeaf0:
+total 80
+drwxr-xr-x  3 root root  4096 Feb 19 05:49 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 58812 Feb 19 05:49 manifest.yaml
+drwxr-xr-x  9 root root  4096 Feb 19 05:48 SOUTH_CAROLINA_CODE_OF_LAWS
+
+package_2021-02-19_05-c1fa9178-d39d-4f9a-a03d-1f1558392482:
+total 92
+drwxr-xr-x  3 root root  4096 Feb 19 05:49 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 70555 Feb 19 05:49 manifest.yaml
+drwxr-xr-x  5 root root  4096 Feb 19 05:48 PENNSYLVANIA_CONSOLIDATED_STATUTES
+
+package_2021-02-19_05-d103ce0a-57e3-4b3f-8029-84727b80d100:
+total 88
+drwxr-xr-x  3 root root  4096 Feb 19 05:50 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 65787 Feb 19 05:50 manifest.yaml
+drwxr-xr-x  5 root root  4096 Feb 19 05:50 VIRGINIA_CODE
+
+package_2021-02-19_06-054c2e44-f106-4ef7-aa78-b2e5c8f566b5:
+total 68
+drwxr-xr-x  3 root root  4096 Feb 19 06:08 .
+drwxr-xr-x 27 root root 12288 Feb 19 06:13 ..
+drwxr-xr-x 12 root root  4096 Feb 19 06:08 CODE_OF_GEORGIA
+-rw-r--r--  1 root root 47047 Feb 19 06:08 manifest.yaml
+
+package_2021-02-19_06-840787a9-0d53-4155-8edb-522de36bc586:
+total 240
+drwxr-xr-x  3 root root   4096 Feb 19 06:16 .
+drwxr-xr-x 27 root root  12288 Feb 19 06:13 ..
+-rw-r--r--  1 root root 223735 Feb 19 06:16 manifest.yaml
+drwxr-xr-x  9 root root   4096 Feb 19 06:15 NORTH_CAROLINA_GENERAL_STATUTES

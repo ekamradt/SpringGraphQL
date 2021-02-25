@@ -4,12 +4,45 @@
 
 clear
 
+cat sources.txt | cut -d ":" -f 1 \
+  | xargs -I {} grep 'path:\|snapshot_date' {}/manifest.yaml \
+  | cut -d "/" -f 1 \
+  | awk 'NR%2{printf "%s ",$0;next;}1' \
+  | sed 's/path://g' \
+  | sed 's/snapshot_date://g' \
+  | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g' \
+  | sort -u
+
+
+function dirs {
 gcloud container clusters get-credentials engin-dev --zone us-east4-a  --project r2ai-266621
 kubectl --context gke_r2ai-266621_us-east4-a_engin-dev -n trireme-perf exec -it confluent-tools -- bash <<EOFF
+cd /data/packages/
+ls -la --color=none *
+EOFF
+}
 
+function rpt {
+kubectl --context gke_r2ai-266621_us-east4-a_engin-dev -n trireme-perf exec -it confluent-tools -- bash <<EOFF
 cd /data/packages/
 ls | xargs -I{} grep 'path:\|snapshot_date' /data/packages/{}/manifest.yaml | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g'
 EOFF
+}
+
+rpt | tee OUTPUT.txt
+dirs | tee DIRS.txt
+
+# #######################
+# Join every two lines
+# #######################
+# awk 'NR%2{printf "%s ",$0;next;}1'
+# clear ; ls | grep  pack \
+#  | xargs -I {} grep 'source_document_name\|snapshot' {}/manifest.yaml \
+#  | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g' \
+#  | awk 'NR%2{printf "%s ",$0;next;}1' \
+#  | sort -u
+# #######################
+
 
 #export DDIR=~/tmp
 #export FFILE=${DDIR}/token.txt

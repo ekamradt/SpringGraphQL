@@ -1,0 +1,63 @@
+
+---------
+INNODATA:
+---------
+File    : /US/US-AK/sdc-alaska-statutes.xml
+Level   : 4
+Msg     : Maybe missing citationFormat?  And set target to true
+Example : <citationFormat>Alaska Stat., tit. {{TITLE}}, ch. {{CHAPTER}}, art. {{ARTICLE}}</citationFormat>
+        : <levelIdentifier type="NumericalSequence" decoration="none" required="true" target="true">
+
+File    : /US/US-NC/sdc-north-carolina-statutes.xml
+Level   : 5
+Msg     : Maybe missing citationFormat?  And set target to true
+Example : <citationFormat>N.C. Gen. Stat., ch. {{CHAPTER}}, art. {{ARTICLE}}, pt. {{PART}}</citationFormat>
+        : <levelIdentifier type="NumericalSequence" decoration="none" required="true" target="true">
+
+File    : /US/US-OR/sdc-oregon-statutes.xml
+Level   : 5
+Msg     : Maybe missing citationFormat?  Makes for a really long citation.
+Example : <citationFormat>Or. Rev. Stat., ch. {{CHAPTER}} {{HEADINGS}}</citationFormat>
+Level   : 6
+Msg     : Maybe missing citationFormat?  Makes for a really, really long citation.
+Example : <citationFormat>Or. Rev. Stat., ch. {{CHAPTER}} {{HEADINGS}} {{SUBHEADINGS}}</citationFormat>
+
+File    : /US/US-VT/sdc-vermont-statutes.xml
+Level   : 7
+Msg     : Maybe missing citationFormat?
+Example : <citationFormat>Vt. Stat. tit. {{TITLE}}, § {{SECTION}}({{PARAGRAPH}})</citationFormat>
+
+File    : /US/US/sdc-gpo-public-laws.xml
+Level   : 3
+Msg     : Maybe remove ACT_TITLE from beginning of citationFormat?  It is really long. (Or maybe add to end?)
+Example :
+          - <citationFormat>{{ACT_TITLE}}, Pub. L. No. {{LAW_NUMBER_DATE}}</citationFormat>
+          + <citationFormat>Pub. L. No. {{LAW_NUMBER_DATE}}</citationFormat>
+Level   : 4
+Msg     : Maybe missing citationFormat?  And set target to true (And leave ACT_TITLE off?)
+Example : <citationFormat>Pub. L. No. {{LAW_NUMBER_DATE}}, tit. {{TITLE}}</citationFormat>
+        : <levelIdentifier type="RomanSequence" decoration="none" case="upper" required="true" target="true">
+Level   : 8
+Msg     : Maybe missing citationFormat?  And set target to true (And leave ACT_TITLE off?)
+Example : <citationFormat>Pub. L. No. {{LAW_NUMBER_DATE}} § {{SECTION}}</citationFormat>
+        : <levelIdentifier type="NumericalSequence" decoration="period" required="true" target="true">
+
+File    : /US/US/sdc-nyse-rules.xml
+Level   : 2
+Msg     : Should this be the Document Root? It is missing the citationFormat.  Or Should leve 3 be the root?
+Example : <citationFormat>NYSE Rules</citationFormat>
+
+File       : /US/US-MD/sdc-maryland-statutes.xml
+Level      : 3
+Msg        : Why is this a DIVISION when the data has a § - this makes a bluebook like "Md. Code, gbo, div. §8-309."
+Hcontainer : <hcontainer name="3" class="/US/US-MD/MARYLAND_STATUTES/gbo/§1-101."
+
+File    : /US/US/sdc-nfa-rulebook.xml
+Level   : 2
+Msg     : Should this be the Document Root?  If so, it should be fixed.
+Ex. citation : "DOCUMENT_TITLE NFA Rulebook"
+
+Level   : 3, 4, 5, 6
+Msg     : Maybe missing citationFormat. We have citations that look like "ARTICLE ARTICLE XV" and "RULE_TYPE Financial Requirements"
+                and "{{TITLE}} Part Part 700."
+
