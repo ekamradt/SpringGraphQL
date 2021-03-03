@@ -1,0 +1,32 @@
+Proposed Breadcrumb | Column View Hierarchy using a US example:
+APAC
+EMEA
+Americas
+          i.    Caribbean
+          ii.   Latin America
+          iii.  Canada
+          iv.  United States
+Federal
+State / Provencial
+Illinois
+                    i.Illinois - Admin Code
+                    ii.Illinois - Bills
+                   iii.Illinois - Revised Statutes
+                    iv.Illinois - Register
+                    v.US Municipal
+Municipal Code of Chicago
+Code of Ordinances of Cook County
+Global
+Proposed taxonomy Hierarchy using a US example:
+
+APAC
+EMEA
+Americas
+          i.     Caribbean
+          ii.     Latin America
+          iii.     Canada
+          iv.     United States
+
+United States of America
+Illinois
+Global

@@ -1,0 +1,133 @@
+TMPLINE: 56
+TMPLINE: 54
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-AK/sdc-alaska-statutes.xml
+TMPLINE: 63
+TMPLINE: 61
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-AZ/sdc-arizona-administrative-code.xml
+TMPLINE: 57
+TMPLINE: 55
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-AZ/sdc-arizona-revised-statutes.xml
+TMPLINE: 152
+TMPLINE: 150
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-CA/sdc-california-statutory-code.xml
+TMPLINE: 61
+TMPLINE: 59
+fixed level DIVISION in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-CO/sdc-colo-admin-code.xml
+TMPLINE: 78
+TMPLINE: 76
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-CT/sdc-connecticut-revised-statutes.xml
+TMPLINE: 63
+TMPLINE: 61
+fixed level SUBTITLE in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-CT/sdc-connecticut-code.xml
+TMPLINE: 56
+TMPLINE: 54
+fixed level TITLE in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-DC/sdc-district-of-columbia-code.xml
+TMPLINE: 57
+TMPLINE: 55
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-FL/sdc-florida-statutes.xml
+ERROR Should be at level 'CHAPTER' not 'CODE_OF_GEORGIA' in '/media/ekamradt/e/sdc/data-innodata-sdc/US/US-GA/sdc-code-of-georgia.xml}'
+TMPLINE: 64
+TMPLINE: 62
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-ID/sdc-idaho-statutes.xml
+' in '/media/ekamradt/e/sdc/data-dcl-sdc/US/US-IL/sdc-illinois-compiled-statutes.xml}'
+TMPLINE: 67
+TMPLINE: 65
+fixed level ARTICLE in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-IN/sdc-indiana-admin-code.xml
+TMPLINE: 84
+TMPLINE: 82
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-IN/sdc-indiana-code.xml
+TMPLINE: 67
+TMPLINE: 65
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-IA/sdc-iowa-admin-code.xml
+TMPLINE: 63
+TMPLINE: 61
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-KY/sdc-kentucky-revised-statutes.xml
+TMPLINE: 75
+TMPLINE: 73
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-ME/sdc-maine-admin-code.xml
+TMPLINE: 66
+TMPLINE: 64
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-ME/sdc-maine-revised-statutes.xml
+TMPLINE: 72
+TMPLINE: 70
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-MA/sdc-massachusetts-general-laws.xml
+TMPLINE: 53
+TMPLINE: 51
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-MN/sdc-minnesota-rules.xml
+TMPLINE: 59
+TMPLINE: 57
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-MN/sdc-minnesota-statutes.xml
+TMPLINE: 53
+TMPLINE: 51
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-MS/sdc-mississippi-code.xml
+TMPLINE: 64
+TMPLINE: 62
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-MT/sdc-montana-administrative-rules.xml
+TMPLINE: 58
+TMPLINE: 56
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-MT/sdc-montana-code.xml
+TMPLINE: 40
+TMPLINE: 38
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NE/sdc-nebraska-revised-statutes.xml
+TMPLINE: 41
+TMPLINE: 39
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NV/sdc-nevada-admin-code.xml
+TMPLINE: 58
+TMPLINE: 56
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NV/sdc-nevada-revised-statutes.xml
+TMPLINE: 64
+TMPLINE: 62
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NH/sdc-new-hampshire-revised-statutes.xml
+TMPLINE: 58
+TMPLINE: 56
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NH/sdc-new-hampshire-administrative-rules.xml
+TMPLINE: 69
+TMPLINE: 67
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NJ/sdc-new-jersey-revised-statutes.xml
+TMPLINE: 38
+TMPLINE: 36
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-NM/sdc-new-mexico-statutes.xml
+TMPLINE: 89
+TMPLINE: 87
+fixed level ARTICLE in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NY/sdc-new-york-laws.xml
+TMPLINE: /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml /media/ekamradt/e/sdc/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+expr: syntax error: unexpected argument ‘/media/ekamradt/e/sdc/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml’
+TMPLINE:
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-NY/sdc-ny-admin-code.xml /media/ekamradt/e/sdc/data-innodata-sdc/US/NY/sdc-new-york-admin-code.xml
+TMPLINE: 38
+TMPLINE: 36
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-NC/sdc-north-carolina-statutes.xml
+TMPLINE: 94
+TMPLINE: 92
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-ND/sdc-nd-admin-code.xml
+TMPLINE: 62
+TMPLINE: 60
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-ND/sdc-north-dakota-century-code.xml
+TMPLINE: 59
+TMPLINE: 57
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-OH/sdc-ohio-admin-code.xml
+TMPLINE: 60
+TMPLINE: 58
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-OH/sdc-ohio-statutes.xml
+TMPLINE: 77
+TMPLINE: 75
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-OR/sdc-oregon-statutes.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-PA/sdc-pennsylvania-consolidated-statutes.xml
+fixed level ACT in file /media/ekamradt/e/sdc/data-dcl-sdc/IE/IE/sdc-ireland-pre-1922-acts.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-RI/sdc-ri-statutes.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-SC/sdc-south-carolina-code-of-laws.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-SD/sdc-sd-admin-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-SD/sdc-sd-statutes.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-TN/sdc-tennessee-rules-and-regulations.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-TX/sdc-texas-admin-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-TX/sdc-texas-statutes.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-innodata-sdc/US/US-UT/sdc-utah-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-VA/sdc-virginia-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-VA/sdc-virginia-admin-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WA/sdc-washington-administrative-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WA/sdc-revised-code-of-washington.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WI/sdc-wisc-admin-code.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WI/sdc-wisconsin-statutes.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WY/sdc-wyoming-administrative-rules.xml
+fixed level CHAPTER in file /media/ekamradt/e/sdc/data-dcl-sdc/US/US-WY/sdc-wyoming-revised-statutes.xml
+ekamradt@system76-pc:~/git/SpringGraphQL/src/mvd$

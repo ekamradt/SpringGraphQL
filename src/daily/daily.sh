@@ -4,33 +4,52 @@
 
 clear
 
+#cat sources.txt | cut -d ":" -f 1 \
+#  | xargs -I {} grep 'path:\|snapshot_date' {}/manifest.yaml \
+#  | cut -d "/" -f 1 \
+#  | awk 'NR%2{printf "%s ",$0;next;}1' \
+#  | sed 's/path://g' \
+#  | sed 's/snapshot_date://g' \
+#  | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g' \
+#  | sort -u
+
+
+function snap {
+gcloud container clusters get-credentials engin-dev --zone us-east4-a  --project r2ai-266621
+kubectl --context gke_r2ai-266621_us-east4-a_engin-dev -n trireme-perf exec -it confluent-tools -- bash <<EOFF
+cd /data/packages/latest
 cat sources.txt | cut -d ":" -f 1 \
   | xargs -I {} grep 'path:\|snapshot_date' {}/manifest.yaml \
-  | cut -d "/" -f 1 \
+  | cut -d "/" -f 1
+EOFF
+}
+
+#snap | tee /tmp/DIRS.txt
+
+echo "== ==============================================================="
+echo "== Snapshot dates"
+echo "== ==============================================================="
+cat /tmp/DIRS.txt \
   | awk 'NR%2{printf "%s ",$0;next;}1' \
+  | sed 's/-//g' \
   | sed 's/path://g' \
   | sed 's/snapshot_date://g' \
   | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g' \
-  | sort -u
+  | sed 's/\s\s/ /g' \
+  | sed 's/^\s//g' \
+  | sort -u \
+  | awk '{print $2,$1}'
+echo " "
+echo " "
 
-
-function dirs {
-gcloud container clusters get-credentials engin-dev --zone us-east4-a  --project r2ai-266621
-kubectl --context gke_r2ai-266621_us-east4-a_engin-dev -n trireme-perf exec -it confluent-tools -- bash <<EOFF
-cd /data/packages/
-ls -la --color=none *
-EOFF
-}
-
-function rpt {
-kubectl --context gke_r2ai-266621_us-east4-a_engin-dev -n trireme-perf exec -it confluent-tools -- bash <<EOFF
-cd /data/packages/
-ls | xargs -I{} grep 'path:\|snapshot_date' /data/packages/{}/manifest.yaml | sed 's/T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]//g'
-EOFF
-}
-
-rpt | tee OUTPUT.txt
-dirs | tee DIRS.txt
+# How do I tell what was run and what was suppose to run?
+# On the shared drive there are 3 listed under "latest"; however, in the logs there are many that ran after these.
+# CODE_OF_GEORGIA
+# FINANCIAL_ACTION_TASK_FORCE_FATF_MEDIA
+# NATIONAL_RISK_ASSESSMENT
+#   Which ones do I pay attention to for the purpose of updating the QA spreadsheet?
+#   Do I log each one after a certain time?
+#   And what time would that be?
 
 # #######################
 # Join every two lines
